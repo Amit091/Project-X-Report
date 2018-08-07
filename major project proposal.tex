@@ -24,7 +24,7 @@
 
 \newif
 \ifhassupervisor
-\hassupervisortrue % to display supervisor name use command- \hassupervisortrue
+\hassupervisorfalse % to display supervisor name use command- \hassupervisortrue
  
 \newcommand{\supervisor}{Ajay Mani Paudel} % Specify Name of Supervisor for Major Project
 \newcommand{\degSup}{External Director} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
@@ -84,6 +84,17 @@
   long  =  Comma Seprated Value,
   class = abbr
 }
+\DeclareAcronym{odbc}{
+ short = ODBC,
+ long =Open Database Connectivity,
+ class = abbr
+}
+\DeclareAcronym{os}{
+ short = OS,
+ long =Operating System,
+ class = abbr
+}
+
 
 
 %The Document
@@ -167,7 +178,7 @@ To predict and analyze the insurance historical data based on the claims, data c
 Some insurers have gone for non-scalable temporary solutions, which often fail to leverage the ever-increasing volumes of data. Hence, recognizing the need for an effective business a data warehouse cannot be the answer to all the information requirements hence it is also very important to set clear business objectives for the business intelligence solution with total top management support.
  \par
 \newpage
-\section{Insurance}
+\subsection{Insurance}
 A practice by which a company provides a guarantee of compensation for specified loss, damage, illness, or death in return for payment. 
 \subsection{Definition of Non-Life Insurance }
 Non-life insurance, also called property and casualty insurance, is a type of coverage that is very common and covers businesses and individuals. It protects them, monetarily, from disaster by providing money in the event of a financial loss. Before you purchase this type of insurance or if you already own any kind of non-life insurance, you should understand what it is.
@@ -194,6 +205,11 @@ Non-life insurance, also called property and casualty insurance, is a type of co
 \end{center}
 \end{figure}
 
+\section{Crystal Report}
+Crystal Reports is a popular Windows-based report writer (report generation program) that allows a programmer to create reports from a variety of data sources with a minimum of written code. Developed by Seagate Software, Crystal Reports can access data from most widely-used databases and can integrate data from multiple databases within one report using \acl{odbc} (\acs{odbc}). Crystal Reports uses an ActiveX control called Crystal Report to establish a connection with another program. A programmer can set properties of the Crystal Report control during design time or at run time.
+\par
+The programmer can use automation tools called Experts to be guided through common tasks, such as linking and embedding reports. Crystal Reports treats all text, graphics, and database fields as object s that a programmer can place, arrange, and format on forms. The program also generates a record set object and code needed to perform programming tasks such as loop s or mathematical calculations. Crystal Reports can create a report on the fly from user-defined variables and can convert it to HTML and publish it to the Web automatically. 
+
 \section{Problem Statement}
 The insurance industry worldwide is facing the challenges of deregulation, consolidation and convergence of financial services. There is today a pressing demand for cutting edge services of insurance business management and enriched customer experiences at a significantly lower cost. Our project aims to predict the risk behind bike insurance. It relates the information of the current customer and bike to the past data determining whether to make insurance or not.
 
@@ -206,12 +222,13 @@ The objectives of this project are:
 \end{itemize}
 
 \section{Application}
-Project-X is a web application which analyze and visualize the user data. The application of this is help the  management level for policy making in insurance company. It provides visualization to the company. The visualization generate the report for claimed and unclaimed report separately with respective attributes. The report provides the management level with overall glance of the insurance to claim policy. The generated report is printable. Due to this , it required less human resource. In simple meaning it is decision support system for bike insurance company.
+Project-X is a web application which analyze and visualize the user data. This project is specoally developed for insurance company. The application of this is help the  management level for policy making in insurance company. It provides visualization to the company. The visualization generate the report for claimed and unclaimed report separately with respective attributes. The report provides the management level with overall glance of the insurance to claim policy. The generated report is printable. Due to this , it required less human resource. In simple meaning it is decision support system for bike insurance company.
 
 \section{Project Features} \label{sec:feat}
 \begin{itemize}
 \item Claimed and unclaimed report generation based on various attributes.
 \item Insurance performance can be visualized. 
+\item Business Intelligence Report (Crystal Report). 
 \end{itemize}
 
 
@@ -229,33 +246,48 @@ It determine whether the project is economically and logically possible or not. 
 project reduces the operations and maintenance cost of IT infrastructures
 
 \subsection{Technical Feasibility}
-This feasibility includes the software and hardware used for project.As this project will be developed using 'C sharp' as programming language and simply using the logical concept, it won't require sophisticated equipment. A PC with Windows Operating System will be able to run the software. However it may face some technical issues in data processing if the computer running this software doesn't meet the minimum hardware requirements such as processing power and RAM.Thus watching overall ,this project is technically feasible.
+This feasibility includes the software and hardware used for project.As this project will be developed using 'C sharp' as programming language and simply using the logical concept, it won't require sophisticated equipment. A PC with any Operating System with a browser and network will be able to run the software. Almost all current devices support the surfing the network. Thus watching overall ,this project is technically feasible.
 
 \subsection{Operational Feasibility}
-A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of a project.
-We will be gathering data from the insurance Company for the previous data related to the bike insurance.    Besides gathering data from the company, our project provides user friendly platform, people with simple knowledge of computer can operate easily and the system can perform the rest operation.
+A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of a project. As a webpage, it can be anywhere at any time after it deployment to the server. Our project provides user friendly platform, people with simple knowledge of computer can operate easily and the system can perform the rest operation.
 
-
+\newpage
 \section{System Requirement}
-
+System Requirements are categorized  into two field:
 \subsection{Software Requirement}
-\renewcommand{\labelenumi}{\roman*.}
+\begin{itemize}
+
+\item{}\textbf{For System Development}
+ \begin{enumerate}
+ \item Operating System : Windows \acs{os}
+ \item IDE : Visual Studio 2017
+ \item Framework : Microsoft .net framework
+ \item Database : Microsoft SQL Server 2014
+ \end{enumerate}
+
+\item \textbf{For End Users} 
 \begin{enumerate}
-\item Operating System : Windows OS
-\item Framework : Microsoft .net framework
-\item Database : Microsoft SQL Server 2014
- 
+\item Any Operating System with browser and internet.
 \end{enumerate}
+
+\end{itemize}
 
 \subsection{Hardware Requirement}
-\renewcommand{\labelenumi}{\roman*.}
+\begin{itemize}
+\item \textbf{For System  Development}
 \begin{enumerate}
-\item Processor: 1 GHz or faster (32-bit or 64-bit)
-\item RAM: 1 GB
+\item PC with 1.8 GHz 4 GB RAM
 \end{enumerate}
+\item \textbf{For End Users}
+\begin{enumerate}
+\item Any Device with supporting latest browser and internet
+\end{enumerate}
+\end{itemize}
+
 
 \chapter{Literature Review}
 Insurance is a practice by which a company provides a guarantee of compensation for specified loss, damage, illness, or death in return for payment.Bike Insurance is insurance for bike, motorcycle. Its primary use is to provide financial protection against physical damage or bodily injury resulting from traffic collisions and against liability that could also arise there from. Bike Insurance also provide financial support in case of bike stolen, damaged to bike from events other than traffic collisions , and keying and collision with stationary object. \cite{insurance2015bike}
+Some Previously developed platform:
 \par
 \section{Sisense}
  \par
@@ -365,28 +397,133 @@ A Na\"{\i}ve Bayes Classifier is a probabilistic classifier based on applying Ba
 
 \par
 Na\"{\i}ve Bayes Classifier is simple probabilistic classifier that calculates a set of probability by counting the frequency and combinations of value in a given set of data. The algorithm uses Bayes theorem and assumes all attributes to be independent given the value  of  the  class  variable. Na\"{\i}ve Bayesian classifier is based on Bayes’ theorem and the theorem of total probability. 
+
+
 \section{Data Pre-Processing}\label{sec:obj}
 \begin{itemize}
-   \item Pre-process Steps
-   \begin{itemize}
-     \item[-] Data Cleaning
-     \item[-] Data Integration and Transformation
-     \item[-] Data Reduction
-   \end{itemize}
-   \item Data in real world is dirty 
-   \begin{itemize}
-     \item[-]incomplete: lacking attribute values, lacking certain attributes of interest, or containing only aggregate data
-     \item[-] noisy: containing errors or outliers
-     \item[-] inconsistent: containing discrepancies in codes or names
+\item Pre-process Steps
+	\begin{itemize}
+	\item[-] Data Cleaning
+	\item[-] Data Integration and Transformation
+	\item[-] Data Reduction
+	\end{itemize}
+\item Data in real world is dirty 
+	\begin{itemize}
+	\item[-]incomplete: lacking attribute values, lacking certain attributes of interest, or containing only aggregate data
+	\item[-] noisy: containing errors or outliers
+	\item[-] inconsistent: containing discrepancies in codes or names
     
-   \end{itemize}
-   \item No quality data, no quality mining result
-   \begin{itemize}
-     \item[-] Quality decisions must be based on quality data
-     \item[-] Data warehouse needs consistent integration of quality data
-     \item[-] Reduced Accuracy
+	\end{itemize}
+\item No quality data, no quality mining result
+	\begin{itemize}
+	\item[-] Quality decisions must be based on quality data
+	\item[-] Data warehouse needs consistent integration of quality data
+	\item[-] Reduced Accuracy
+	\end{itemize}
+\end{itemize}     
+    
+    
+    
+\subsection{Measure of data Quality}
+    \begin{itemize}
+    \item[•] \textbf{Well-accepted multidimensional view:}
+    \begin{itemize}
+    \item[-] Accuracy
+    \item[-] Completeness
+    \item[-] Consistency
+    \item[-] Reliable
+    \item[-] Interpretability         
+    \item[-] Accessibility
+    \end{itemize}     
     \end{itemize}
-\end{itemize}
+
+\subsection{Major Task in Data Pre-processing}    
+\begin{enumerate}
+\item Data Cleaning
+	\begin{itemize}
+	\item Fill in missing values, smooth noisy data, identify or remove outliers, and resolve 		inconsistencies.
+	\item Data cleaning tasks
+		\begin{itemize} 	
+		\item Fill in missing values
+		\item Identify outliers and smooth out noisy data 
+		\item Correct inconsistent data	
+		\end{itemize}
+	\end{itemize}
+ 	
+\item Data integration	
+	\begin{itemize}
+	\item Combine data from multiple data source.
+	\item Detecting and resolving data value conflicts
+	\item possible reasons: different representations, different name
+	\end{itemize}
+   
+\item Data Transformation
+	\begin{itemize}
+	\item Normalization and aggregation
+	\item Data smoothing
+	\item Data summarization
+	\item Data Reduction
+	\end{itemize}
+\end{enumerate}
+
+
+\subsection{Data Smoothing}
+When data collected over time displays random variation, smoothing techniques can be used to reduce or cancel the effect of these variations. When properly applied, these techniques smooth out the random variation in the time series data to reveal underlying trends. The variation  in data cause the program to  produce unreliable result and inaccurate. Smoothing is technique to remove the variation in data. 
+\par
+Different ways of data smoothing technique are:
+\begin{enumerate}
+%\renewcommand{\labelenumi}{\roman*.}
+\item Data Level approach: Resampling Techniques
+	\begin{enumerate}
+	\item Random Under-Sampling
+	\item Random Over-Sampling
+	\item Cluster-Based Over Sampling
+	\item Informed Over Sampling:Synthetic Minority Over Sampling Technique (SMOTE)
+	\item Modified synthetic oversampling technique(MSMOTE)
+	\end{enumerate}
+
+\item Algorithmic Ensemble Techniques
+	\begin{enumerate}
+	\item Bagging based
+	\item Boosting Based
+		\begin{itemize}
+		\item[-] Adaptive Boosting-Ada Boost
+		\item[-] Gradient Tree Boosting
+		\item[-] XG Boost
+		\end{itemize}
+	\end{enumerate}
+
+\end{enumerate}
+\subsection{SOMTE Technique}
+SMOTE is short hand for Synthetic Minority Over Sampling Technique. This techniques is followed to avoid overfitting which occurs when exact replicas of minority instances are added to the main dataset. A subset of data taken from a minority class as an example and then synthetic similar instances are created. The synthetic instances are then added to the original dataset. Then the new data set is used to train the classifier models.
+\par 
+We have seperately perform data smoothing using R languages. We used SMOTE to balance the data of claimed and unclaimed data to maintain low variation and train the balanced data using Gradient boosting algorithm in R. 
+\par 
+This process significantly imapcats the accuracy of the predictive model.  By increasing its around accuracy by 20 percent .
+
+\section{Confusion Matrix}
+A confusion matrix is a table that is often used to describe the performance of a classification model (or "classifier") on a set of test data for which the true values are known. The confusion matrix itself is relatively simple to understand, but the related terminology can be confusing.	
+\par 
+Confusion matrix is 2x2 matrix with 4 variables with Actual true and false and Predicated true and false class .
+
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{large}
+	\includegraphics[width=6in]{images/confusionmatrix.png}
+	\caption{Confusion Matrix} %figure name
+	%\caption*{Source: https://rasbt.github.io/mlxtend/user_guide/evaluate/confusion_matrix/}
+	%\0caption*{Source: https://istqbexamcertification.com}
+	\label{Confusion matrix} % for referencing
+\end{large}
+\end{figure} 
+\par
+From figure:
+\begin{enumerate}
+\item $Accuracy = \frac{TP+TN}{P+N}$
+	
+\end{enumerate}
+
+ 
+ 
 
 \section{Implementing Algorithm}
 \begin{itemize}
@@ -418,8 +555,9 @@ $P(A_1,A_2,A_3.....A_n|C)P(C)$
 $P(C_j)*P(A_i|C_j)$ is maximum.
 \end{itemize}
 
-
 \end{itemize}
+
+
 
 \chapter{Methodology}
 \section{E-R Diagram}
@@ -543,11 +681,10 @@ We mainly divide our project into 3 phase.
 
 
 \chapter{Result and Discussion}
-\section{Works Completed}
-We have completed the User Interface of our project. We have also collected the data from Nepal Insurance Company located at Kamaladi, Kathmandu.\cite{data2017} Data from the company is not as per our requirement so we have manually filtered the data.  We have completed the testing and training of data. We also completed to analyze the data from user on basis of our training and testing set.
+\section{Outputs}
 
-\section{Works Remaining}
-We have yet to generate crystal report depending upon our data. And also to optimize the algorithm for better accuracy and front end. 
+\section{Limitation}
+
  
 \section{Problems Faced}
 \begin{itemize}
@@ -566,7 +703,9 @@ We have yet to generate crystal report depending upon our data. And also to opti
 \end{center}
 \end{figure}
 \newpage
-
+\chapter{Conclusion}
+\section{Conclusion}
+\section{Future Enhancement}
 
 
 \renewcommand\bibname{References} % Change heading to References
@@ -576,3 +715,4 @@ We have yet to generate crystal report depending upon our data. And also to opti
 
 
 \end{document}
+
