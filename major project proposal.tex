@@ -1,0 +1,578 @@
+\include{KECReportFormat} %includes the file KecReportFormat.tex that include all necessary formattings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Define Macros for Details of your Project
+\newcommand{\project}{Major Project} %Specify "Major Project" or "Minor Project"
+\newcommand{\projectTitle}{"PROJECT X : A BUSINESS INTELLIGENCE FOR BIKE INSURANCE"} %specify "Title" of Your Project
+\newcommand{\doc}{Final Report} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
+% Note that You have to sibmit "Final Report" for Pre-final defense as well.
+\newcommand{\subCode}{CT755} %specify Subject of Your Project
+\newcommand{\degree}{Bachelor in Computer Engineering} %specify your degree
+\newcommand{\submittedBy}%Specify Names and Roll/Symbol Numbers of the Project Group Members
+{
+%Edit Member Names and Roll/Symbol No. and adjust width (\makebox[width]) if necessary 
+\makebox[9cm]{Amit Dhoju \hfill [091/BCT/2071]}\\
+\makebox[9cm]{Kaushtup Bista \hfill [103/BCT/2071]}\\
+\makebox[9cm]{Roshi Maharajan \hfill [117/BCT/2071]}
+%\makebox[9cm]{Member Name \hfill [Roll/Symbol No.]}\\
+} % Note that You must write your "Symbol Numbers"(Exam Roll Numbers) for Final Defenses
+
+\newcommand{\submittedTo}{Department of Computer and Electronics Engineering} %specify your department
+\newcommand{\hod}{Er. Rabindra Khati} %specify Head ot the department
+\newcommand{\defYear}{2018} %Defense Year
+\newcommand{\defMonth}{July} %Defense Month- January, February, ...
+\newcommand{\defDay}{10} %specify Defense Day- 1, 2, ...
+
+\newif
+\ifhassupervisor
+\hassupervisortrue % to display supervisor name use command- \hassupervisortrue
+ 
+\newcommand{\supervisor}{Ajay Mani Paudel} % Specify Name of Supervisor for Major Project
+\newcommand{\degSup}{External Director} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
+\newcommand{\external}{External's Name} %Specify Name of External for Major Project (Required for Black Book)
+\newcommand{\degExternal}{External's Designation\\Second Line of Designation (if required)} %Specify Name of External for Major Project (Required for Black Book) , use multiple lines (\\) if necessary
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Define Abberviations and Symbols
+% NOTE that Only those Abberviations and Symbols that are included in document(using command \ac{}) will be displayed in the List of Abberviations and Symbols.
+
+%class 'abbr': for List of Abbreviations
+\DeclareAcronym{bi}{ 
+  short = BI ,
+  long  = Business Intelligence ,
+  class = abbr
+}% declares acronym named "UN". Use \ac{UN} for short and \acl{UN} for long form. 
+
+\DeclareAcronym{cc}{
+  short = CC ,
+  long  =  Cubic Centimeter,
+  class = abbr
+}
+
+\DeclareAcronym{sdlc}{
+  short =  SDLC,
+  long  =  Software Development life Cycle,
+  class = abbr
+}
+\DeclareAcronym{sql}{
+  short =  SQL,
+  long  =  Server Query Language,
+  class = abbr
+}
+
+\DeclareAcronym{mvc}{
+  short =  MVC,
+  long  =  Model View Controller,
+  class = abbr
+}
+
+\DeclareAcronym{nn}{
+  short =  NN,
+  long  =  Neural Network,
+  class = abbr
+}
+
+\DeclareAcronym{svm}{
+  short =  SVM,
+  long  =  Support Vector Machine,
+  class = abbr
+}
+\DeclareAcronym{csv}{
+  short =  CSV,
+  long  =  Comma Seprated Value,
+  class = abbr
+}
+
+
+%The Document
+\begin{document}
+
+\KECcoverpage % command defined in KECReportFormat
+\KECtitlepage % command defined in KECReportFormat
+
+\pagenumbering{roman} % starts pagenumberins in Roman numerals i, ii, ...
+
+%Copyright Page is required for FINAL REPORT only. Comment this section for other Reports.
+%\KECcopyright % defined in KECReportFormat.tex
+
+%Approval Page is required for FINAL(Black Book Binded) REPORT of MAJOR PROJECT only. Comment this section for other Reports. 
+%\KECapproval % defined in KECReportFormat.tex
+
+\chapter*{Abstract} % The summary of your report
+\addcontentsline{toc}{chapter}{Abstract}%to include this chapter in TOC 
+ 
+There is no alternative for intelligence. What if intelligence used in gambling? the result is success. In short this is our project, title "\textbf{Project X:A Business Intelligence For Bike Insurance}". Our project describe a predict policy for bike insurance by visualization towards the history of bike insurance data. Our system will train for our intelligence and will be able to predict the possible claim. The insurance industry worldwide is facing the challenges of deregulation, consolidation and convergence of financial services. There is today a pressing demand for cutting edge services of insurance business management and enriched customer experiences at a significantly lower cost. Insurance is gambling and we are trying to give technique to win this gamble. Our system will determine the possible accident of bike so that management of insurance in-charge policy for new client whether to insurance or not. If system predicts the possible claim then system will suggest the insurance company not to make that insurance otherwise insurance is made. Based upon \acs{cc} of Bike, Bike Manufacturer, Lote, Zone, and Type Cover, our system will predict the possible claim.
+\par
+\textbf{\textit{Keywords$-$}} Business Intelligence, Prediction, Analysis, Insurance 
+
+\chapter*{Acknowledgment}
+\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+Write Acknowledgment Here. Ea his munere torquatos, quidam essent luptatum cu pro. Ei duo scaevola %electram. Vidit percipitur ut vim, ne his solet prodesset inciderint. Cum facilisi sententiae at, vis %noster electram contentiones cu. Nec at eius novum diceret.
+\par
+Second para of Acknowledgment. Sed veri aeque persecuti ut. Ut accusam mediocrem accusamus eos, quis %clita probatus ex his. Mea oratio deleniti interesset at. Odio melius antiopam eu his, ut nec tantas maiestatis ullamcorper. Ut numquam reprimique cum. Acknowledgement ENDS here.\par
+
+to display members name under Acknowledgement
+\begin{flushright}
+\vskip -20pt
+\setstretch{1.2}
+\submittedBy
+\end{flushright}
+
+%to adjust spacings for TOC, LOF, LOT
+{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TOC, LOF and LOT
+\KECadjusttocspacings % defined in KECReportFormat.tex to adjust spacings
+\makeatletter
+% to add vskip of 18 point which is reduced when parskip is set to 0 in \LECadjustspacings
+\def\@makeschapterhead#1{%
+  %\vspace*{50\p@}% Remove the vertical space
+  {\newpage \parindent \z@ \raggedright
+    \normalfont
+    \interlinepenalty\@M
+    \center \fontsize{16pt}{1} \bfseries \MakeUppercase{#1}\par\nobreak
+    \vskip 18\p@ % adjust space after heading 18pt
+  }}
+\makeatother 
+
+\tableofcontents % prints table of contents
+
+\cleardoublepage
+% \phantomsection
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+%\listoffigures % prints list of figures
+%\listoftables % prints list of table
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%comment this chapter if you don't have List of Abbreviations
+\KECloa % defined in KECReportFormat
+
+%comment this chapter if you don't have List of Symbols
+%\KEClos % defined in KECReportFormat
+
+\newpage
+\pagenumbering{arabic} % starts pagenumbering in arabic numerals
+
+\chapter{Introduction}
+
+\section{Background}\label{sec:bkgrnd}%label your section if you require to refer them somewhere else in \textbf{your document.
+\textbf {\acl{bi}}(BI) is defined as the ability for an organization to take all its capabilities and convert them into knowledge. This produces large amounts of information which can lead to the development of new opportunities for the organization. When these opportunities have been identified and a strategy has been effectively implemented, they can provide an organization with a competitive advantage in the market, and stability in the long run.\cite{chen2012business}
+\par
+Business Intelligence in Insurance provides the information to insurance company on claim management of motorbike which helps in gain insight and visibility on the cost of claims; analyze claims breakdown by \acs{cc} of Bike, Bike Manufacturer, Lote , Zone and Type Cover. 
+To predict and analyze the insurance historical data based on the claims, data can identify suitable polices for risk modelling , reinsurance, profitability analysis, loss analysis, claim analysis, claim estimation by  using the “ Back propagation algorithm ” to find the claim pattern according to \acs{cc} of Bike, Bike Manufacturer, Lote, Zone, and Type Cover.
+Some insurers have gone for non-scalable temporary solutions, which often fail to leverage the ever-increasing volumes of data. Hence, recognizing the need for an effective business a data warehouse cannot be the answer to all the information requirements hence it is also very important to set clear business objectives for the business intelligence solution with total top management support.
+ \par
+\newpage
+\section{Insurance}
+A practice by which a company provides a guarantee of compensation for specified loss, damage, illness, or death in return for payment. 
+\subsection{Definition of Non-Life Insurance }
+Non-life insurance, also called property and casualty insurance, is a type of coverage that is very common and covers businesses and individuals. It protects them, monetarily, from disaster by providing money in the event of a financial loss. Before you purchase this type of insurance or if you already own any kind of non-life insurance, you should understand what it is.
+
+\subsection{Principle of Insurance}
+\begin{enumerate}
+\item Insurance transfers the financial consequences of an existing risk.
+\item Law of Large Numbers
+\item The more predictable the outcome
+\item Pricing and risk management
+\item Considerations in Setting Premium Rates
+\end{enumerate}
+
+\newpage
+\subsection{Insurance Risk}
+
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width = 5in]{images/ir.png}
+	\caption{Insurance Risk} %figure name
+	\caption*{Source: https://www.pinterest.co.uk/pin/534521049520207946/}
+
+	\label{Risk type}% for referencing
+\end{center}
+\end{figure}
+
+\section{Problem Statement}
+The insurance industry worldwide is facing the challenges of deregulation, consolidation and convergence of financial services. There is today a pressing demand for cutting edge services of insurance business management and enriched customer experiences at a significantly lower cost. Our project aims to predict the risk behind bike insurance. It relates the information of the current customer and bike to the past data determining whether to make insurance or not.
+
+\section{Objectives}\label{sec:obj}
+The objectives of this project are:
+\begin{itemize}
+\item To predict the possibility to claim of bike insurance.
+\item To visualize the insurance performance. 
+\item To generate the claimed and unclaimed report.
+\end{itemize}
+
+\section{Application}
+Project-X is a web application which analyze and visualize the user data. The application of this is help the  management level for policy making in insurance company. It provides visualization to the company. The visualization generate the report for claimed and unclaimed report separately with respective attributes. The report provides the management level with overall glance of the insurance to claim policy. The generated report is printable. Due to this , it required less human resource. In simple meaning it is decision support system for bike insurance company.
+
+\section{Project Features} \label{sec:feat}
+\begin{itemize}
+\item Claimed and unclaimed report generation based on various attributes.
+\item Insurance performance can be visualized. 
+\end{itemize}
+
+
+
+
+
+
+\section{Feasibility Analysis}
+
+\subsection{Economic Feasibility}
+
+The economic feasibility of the software refers to the cost of its creation, cost required
+to launch the system and its efficiency in terms of cost after its launch to real platform.
+It determine whether the project is economically and logically possible or not.  This
+project reduces the operations and maintenance cost of IT infrastructures
+
+\subsection{Technical Feasibility}
+This feasibility includes the software and hardware used for project.As this project will be developed using 'C sharp' as programming language and simply using the logical concept, it won't require sophisticated equipment. A PC with Windows Operating System will be able to run the software. However it may face some technical issues in data processing if the computer running this software doesn't meet the minimum hardware requirements such as processing power and RAM.Thus watching overall ,this project is technically feasible.
+
+\subsection{Operational Feasibility}
+A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of a project.
+We will be gathering data from the insurance Company for the previous data related to the bike insurance.    Besides gathering data from the company, our project provides user friendly platform, people with simple knowledge of computer can operate easily and the system can perform the rest operation.
+
+
+\section{System Requirement}
+
+\subsection{Software Requirement}
+\renewcommand{\labelenumi}{\roman*.}
+\begin{enumerate}
+\item Operating System : Windows OS
+\item Framework : Microsoft .net framework
+\item Database : Microsoft SQL Server 2014
+ 
+\end{enumerate}
+
+\subsection{Hardware Requirement}
+\renewcommand{\labelenumi}{\roman*.}
+\begin{enumerate}
+\item Processor: 1 GHz or faster (32-bit or 64-bit)
+\item RAM: 1 GB
+\end{enumerate}
+
+\chapter{Literature Review}
+Insurance is a practice by which a company provides a guarantee of compensation for specified loss, damage, illness, or death in return for payment.Bike Insurance is insurance for bike, motorcycle. Its primary use is to provide financial protection against physical damage or bodily injury resulting from traffic collisions and against liability that could also arise there from. Bike Insurance also provide financial support in case of bike stolen, damaged to bike from events other than traffic collisions , and keying and collision with stationary object. \cite{insurance2015bike}
+\par
+\section{Sisense}
+ \par
+Sisense is \acl{bi} software by Sisense Inc.,the  industry in for complex data-easily prepare analyze and explore growing  data from multiple sources. Sisense is awarded with \textbf{Best \acl{bi} Software for    2016}. It is the business analytics software that lets you easily
+prepare and analyze big, scattered datasets. it have 3 types of user 
+\begin{enumerate}
+\item[i.] Admin : Can access all features of Application.
+\item[ii.] Designer : Mainly to design the elastic cubes and all admin function except Serve and user management.
+\item[iii.] Viewer : Can only view data result and visualization.
+\end{enumerate}
+\par The  unique about Sisense are :
+
+\begin{enumerate}
+\item[1.] Single-Stack architecture: A single tool that helps you collect, prepare, organize and analyze data.
+\item[2.] In-chip Engine and Proprietary technology.
+\item[3.] Optimal use of computational resources.
+\item[4.] A 90-minutes real test-drive for prospective client.
+\end{enumerate}
+\par
+\subsection{How Sisense work}
+Sisense is webapp that work on  both Computer or in smartphones. It works on the dashboard system with Elastic Cubes which is the proprietary analytical tools database that enables to connect multiple data sources and run complex queries in split of second. The data sources that can be used with sisense are file-based data sources (Excel ,\acs{csv}), Traditional database (\acs{sql}, MySQL, Oracle) and Online Web-Services(Google adwords). Data sources are added in elastic cube manager.
+ Different  types of data sources can be added in same cube. Any two field with same type of data on different data sources and be connected by drag and  drop facility of sisense. At last, by building elastic cubes the data will be pull form data sources into elastic cube. When the result is ready it is ready for calculation and the result can be visualize in multiple form.
+\newpage
+
+\section{Qlik Sense}
+QlikSense is software launch  by Qlik software company. QlikSense lets you discover insights that query-based \ac{bi} tools simply miss. One can freely search and explore across  all his data, instantly pivoting your analysis when new ideas surface.\cite{troyansky2015qlikview}
+\linebreak
+The  unique about QlikSense are :
+
+\begin{enumerate}
+\item[1.] Full spectrum of visual analytic.
+\item[2.] Externally governed assets and data modules.
+\item[3.] Data compression.
+\item[4.] Policy-based security rules
+\end{enumerate}
+\par
+\subsection{How does Qlik sense work}
+Qlik Sense is platform of data analysis. It analyze data and make discovery on your own.One can easily share knowledge and data in organization using Qlik sense. It generates views on information for the user. It does not require predefined and static reports. One do not have to dependent on other resources just click and learn. Each click sends instant responds updating every visualizations and view in the app with new data and visualizations. App model help by asking question and user can answer the next question on their own without going back to expert for new report or visualizations for the data .
+\chapter{Theory}
+\section{Bayes' Theorem}
+\par
+Bayes’ Theorem is a statement from probability theory that allows for the calculation of  certain conditional  probabilities. Conditional  probabilities  are  those  probabilities  that reflect  the influence  of  one  event  on  the  probability  of  another  event. The  term  generally used in Bayes’ theorem are prior probability and posterior probability. The prior probability of a hypothesis or events the original probability obtained before any additional information is obtained. The posterior probability is the revised probability of the hypothesis using some additional information or evidence obtained.\cite{garg2013design}
+\par Bayes’ Theorem can be written as:
+
+\[P(A|B)=\frac{P(B|A)P(A)}{P(B)}\]
+
+Where,
+\begin{enumerate}
+\item P(A) is the prior probability of A , 
+\item P(B) is the prior probability of B ,
+\item $P(A | B)$ is the posterior probability of A given B \&
+\item $P(B | A)$ is the posterior probability of B given A
+\end{enumerate}
+
+\par 
+Bayes' Theorem for n independent variable:
+\textbf{\[P(B|A)=P(B_1|A)*P(B_2|A)*P(B_3|A)*...*P(B_n|A)\]}
+
+\section{Classification}
+\par
+Classification in data analysis is the task of assigning a class to instances of data described by a set of attributes. Classification or supervised classification includes the construction of a classifier which is trained on a set of training data
+that already has the correct class assigned to each data point. This builds a concise model of the distribution of 
+class labels. It is then used to classify new data where the values of features are known but the class is unknown.
+\par
+Many algorithms have been developed for supervised classification based on
+\begin{itemize}
+	\item[1.] Artificial Intelligence
+	\item[2.] Perceptron-based Techniques (Single and Multi-Layered Perceptron)
+	\item[3.] Statistical Learning Techniques (Bayesian networks,Instance based techniques)
+\end{itemize}
+
+
+\section{Bayesian Classification}
+\par
+Bayesian Network provides a powerful graphical method for encoding the probabilistic relationship among a set of variables and hence and naturally be used for classification. It learned by using likelihood to achieve classification accuracy. It learned by supervisied learning, where a  training data set of instances with labels representing instance of classes is used to train as classifier.\cite{garg2013design}
+\linebreak Likelihood is calculated by:
+
+\[CLL (G|D)=\sum_{i=1}^{N}\log P(C_i|V_i) \]
+\newpage
+\par
+\subsection{Learning Models}
+\par 
+Types of Learning models:
+\begin{enumerate}
+\item[1.] \textbf{Generative Model}
+\par
+Generative models summarize data probabilistically and are more flexible,since the user can bring in conditional independence assumptions, priors, and hidden variables. Generative classifiers learn a model of the joint probability of the variables and the related class label, and use Bayes’ theorem to compute the posterior probability of the class variable and make predictions. 
+
+\item[2.] \textbf{Discrimative Model}
+\par
+Discriminative models (e.g.\acs{nn} and \acs{svm}) only learn from data to make accurate predictions by directly estimating the class posterior probability or via discriminant functions, and thus offer the user less flexibility in data representation and inference.
+\item[.] 
+\end{enumerate}
+\section{Na\"{\i}ve Bayesian Classifier}
+
+\par
+A Na\"{\i}ve Bayes Classifier is a probabilistic classifier based on applying Bayes’ theorem with strong independence  assumptions. When represented as a Bayesian network, a Na\"{\i}ve Bayes classifier has the structure depicted in Figure below.  \cite{friedman1997bayesian} It shows the independence assumption among all features in a data instance.
+\begin{figure}[bh] % tbh means top, bottom or here (priority: left to right)
+\begin{small}
+
+	\includegraphics[width=4in]{images/naivebayesian.jpg}
+	\caption{Structure of Na\"{\i}ve Bayesian Network} %figure name
+	\caption*{Source:   http://www.mdpi.com/1099-4300/19/6/247}
+	\label{NB} % for referencing
+\end{small}
+\end{figure}
+
+\par
+Na\"{\i}ve Bayes Classifier is simple probabilistic classifier that calculates a set of probability by counting the frequency and combinations of value in a given set of data. The algorithm uses Bayes theorem and assumes all attributes to be independent given the value  of  the  class  variable. Na\"{\i}ve Bayesian classifier is based on Bayes’ theorem and the theorem of total probability. 
+\section{Data Pre-Processing}\label{sec:obj}
+\begin{itemize}
+   \item Pre-process Steps
+   \begin{itemize}
+     \item[-] Data Cleaning
+     \item[-] Data Integration and Transformation
+     \item[-] Data Reduction
+   \end{itemize}
+   \item Data in real world is dirty 
+   \begin{itemize}
+     \item[-]incomplete: lacking attribute values, lacking certain attributes of interest, or containing only aggregate data
+     \item[-] noisy: containing errors or outliers
+     \item[-] inconsistent: containing discrepancies in codes or names
+    
+   \end{itemize}
+   \item No quality data, no quality mining result
+   \begin{itemize}
+     \item[-] Quality decisions must be based on quality data
+     \item[-] Data warehouse needs consistent integration of quality data
+     \item[-] Reduced Accuracy
+    \end{itemize}
+\end{itemize}
+
+\section{Implementing Algorithm}
+\begin{itemize}
+\item Problem Statement
+
+\begin{itemize}
+ \item Given Features : $X_1,X_2,X_3.....X_n.$
+ \item Predict a label Y.
+\end{itemize}
+
+\item Consider each attribute and class label as random variables.
+\item Given a record with attributes ($A_1,A_2,A_3.....A_n)$.
+\begin{itemize}
+\item Goal is to predict class C.
+\item Specifically find value that maximizes P(C$|A_1,A_2,A_3.....A_n)$
+\end{itemize}
+\item Compute posterior probability P(C$|A_1,A_3,A_3.....A_n)$ for all value of C using Bayes theorem.
+\[P(C|B)=\frac{P(A_1*A_2*A_3*.....*A_n|C)P(C)}{P(A_1*A_2*A_3*.....*A_n)}\]
+\item Choose value that maximizes P(C$|A_1,A_2,A_3.....A_n)$
+\item Equivalent to choosing value of C that maximizes.
+$P(A_1,A_2,A_3.....A_n|C)P(C)$
+
+\item Assume independence among attributes $A_i$ when class is given:
+\begin{itemize}
+\item $P(A_1,A_2,A_3.....A_n|C)P(C)=P(A_1|C_j)P(A_2|C_j)P(A_3|C_j)...P(A_n|C_j)$.
+\item Estimate $P(A_i|C_j)$ for all $A_i$ and $C_j$.
+\item New point is classified to $C_j$ if
+\par 
+$P(C_j)*P(A_i|C_j)$ is maximum.
+\end{itemize}
+
+
+\end{itemize}
+
+\chapter{Methodology}
+\section{E-R Diagram}
+The Entity Relationship Diagram of the project:
+\par
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{large}
+
+	\includegraphics[width=6in]{images/ER.jpg}
+	\caption{Entity Relationship Diagram} %figure name
+	\label{ER} % for referencing
+\end{large}
+\end{figure}
+\newpage
+\section{Flow Chart}
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[height=7in]{images/systemflow.png}
+	\caption{Flow Chart Of Project} %figure name
+	
+	\label{Flow Chart} % for referencing
+\end{center}
+\end{figure}
+
+
+\pagebreak
+\newpage
+\section{Use-Case}
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width = 6in]{images/uc.jpg}
+	\caption{Use-case Diagram} %figure name
+	\label{Use-case} % for referencing
+\end{center}
+\end{figure}
+
+In this project there will be three options. The customers information will be taken and based on which insurance to be done is decided. Report and Visualization of data based on various attributes can be done which helps to know the progress of an insurance company.
+\newpage
+\section{Class  Diagram}
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width = 6in]{images/Cd.png}
+	\caption{Class Diagram} %figure name
+	\label{Class} % for referencing
+\end{center}
+\end{figure}
+
+
+\newpage
+\section{Sequence Diagram}
+\begin{figure}[H] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width = 6in]{images/TrainingSequence.png}
+	\caption{Sequence Diagram: Training} %figure name
+	\label{Sequence} % for referencing
+\end{center}
+\end{figure}
+
+%//////////////////\\\\\\\\\\\\\\\\\
+\begin{figure}[H] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width = 6in]{images/TestingSequence.png}
+	\caption{Sequence Diagram: Testing} %figure name
+	\label{Sequence} % for referencing
+\end{center}
+\end{figure}
+
+\begin{figure}[H] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[height = 9in]{images/Sequence.png}
+	\caption{Sequence Diagram} %figure name
+	\label{Sequence} % for referencing
+\end{center}
+\end{figure}
+
+\newpage
+\section{Collaboration Diagram}
+
+\begin{figure}[H] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width = 6in]{images/Collaboration.png}
+	\caption{Collaboration Diagram} %figure name
+	\label{Collaboration} % for referencing
+\end{center}
+\end{figure}
+\newpage
+\section{Software Development Process}
+Project-X is prepared by following approaches based on incremental software development model.  The objective of following incremental model, it provides flexibility of starting project by available requirements, such that requirements can be added on the basis of later added projects objectives.  One of the main feature of the model, it
+provides designing, testings phase in each increment.
+
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width = 5in]{images/sdlc.png}
+	\caption{Incremental Development Model Chart} %figure name
+	\caption*{Source: https://istqbexamcertification.com}
+	%/what-is-incremental-model-advantages-disadvantages-and-when-to-use-it}
+	\label{Incremental Development Model Chart} % for referencing
+\end{center}
+\end{figure}
+\par 
+$  $
+Project-X is application based on Na\"{\i}ve Bayesian Classifier for classifier data and predict the result for user.
+We mainly divide our project into 3 phase.
+\begin{enumerate}
+	\item[1.] \textbf{1st Incremental Phase}
+	\par
+	As Initial phase, we mainly involved in researching about our project basic idea. We also visit company to get data insurance data that is vital for  our project. We have done most of front end. 
+	 \item[2.] \textbf{2nd Incremental Phase}
+	 \par 
+	 We started with implementing of algorithm and training and testing of data was done to find accuracy of data from collected data. We also get more data from company for further analysis of program.
+	 \newpage
+	 \item[3.] \textbf{3rd Incremental Phase}
+	 \par 
+	 We completed almost of front end and back end. We tested our program with 70\% accuracy and crystal report %
+\end{enumerate}
+
+
+
+
+
+
+
+\chapter{Result and Discussion}
+\section{Works Completed}
+We have completed the User Interface of our project. We have also collected the data from Nepal Insurance Company located at Kamaladi, Kathmandu.\cite{data2017} Data from the company is not as per our requirement so we have manually filtered the data.  We have completed the testing and training of data. We also completed to analyze the data from user on basis of our training and testing set.
+
+\section{Works Remaining}
+We have yet to generate crystal report depending upon our data. And also to optimize the algorithm for better accuracy and front end. 
+ 
+\section{Problems Faced}
+\begin{itemize}
+\item Data filtering through various process. 
+\item Limited data.
+\item Implementing the Algorithm.
+\end{itemize}
+%We are expecting an desktop application with starting form of our intelligent system, six inputs are %taken from this form as cast, zone, manufacturer details, cc, lote no, and type cover and based on this %the output of the neural network is calculated. The result determines whether there is risk or not for %insurance. Based on various attributes, report for claim and unclaim as well as visualization through bar %diagram can be viewed.
+\newpage
+\section{Work Schedule}
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width=5in]{images/gantt.png}
+	\caption{Gantt Chart} %figure name
+	\label{Gantt chart} % for referencing
+\end{center}
+\end{figure}
+\newpage
+
+
+
+\renewcommand\bibname{References} % Change heading to References
+\bibliographystyle{IEEEtran} % to use IEEE Format for referencing
+\addcontentsline{toc}{chapter}{References} % to add references in TOC
+\bibliography{ref} % specify the .bib file containing reference information 
+
+
+\end{document}
