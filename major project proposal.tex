@@ -94,6 +94,12 @@
  long =Operating System,
  class = abbr
 }
+\DeclareAcronym{smote}{
+ short = SMOTE,
+ long =Synthetic Minority Over Sampling Technique,
+ class = abbr
+}
+
 
 
 
@@ -368,7 +374,10 @@ The  unique about QlikSense are :
 \end{enumerate}
 \par
 \subsection{How does Qlik sense work}
-Qlik Sense is platform of data analysis. It analyze data and make discovery on your own.One can easily share knowledge and data in organization using Qlik sense. It generates views on information for the user. It does not require predefined and static reports. One do not have to dependent on other resources just click and learn. Each click sends instant responds updating every visualizations and view in the app with new data and visualizations. App model help by asking question and user can answer the next question on their own without going back to expert for new report or visualizations for the data .
+Qlik Sense is platform of data analysis. It analyze data and make discovery on your own.One can easily share knowledge and data in organization using Qlik sense. It generates views on information for the user. It does not require predefined and static reports. One do not have to dependent on other resources just click and learn. Each click sends instant responds updating every visualizations and view in the app with new data and visualizations. App model help by asking question and user can answer the next question on their own without going back to expert for new report or visualizations for the data.
+
+
+
 \chapter{Theory}
 \section{Bayes' Theorem}
 \par
@@ -591,7 +600,34 @@ Terminology and derivatives from confusion matrix.
 
 \end{enumerate}
 
-\section{Implementing Algorithm}
+
+
+
+\chapter{Methodology}
+
+\subsection{Data Collection}
+As our project is intelligence on bike insurance, we needed the real data to explore the reality on the bike insurance. We have collected data from Nepal Insurance Company Limited,Kamaladi , Kathmandu.\cite{data2017} We have about information about xxxxxxxx record from company.
+\subsection{Data Collection in Company}
+In this (Nepal Insurance company limited) company when user arrives at the company for the insurance in any branch, he/she submits the Xerox of blue book and motorcycle purchase bill and one photo of motorcycle owner. One then fills the proposal form. Proposal form contains all the related information. Then staff of insurance company entry the data in the software. When client makes claim, the research team makes research at the central corporate office located at kamaladi Kathmandu. And if the claim is responded positive the claimed data is again entered by the staff. This process goes on every branch of the company. Now the database data is written in DVD and send to the central office to combine data of the entire branch which is done by the IT staff of the central corporate company.
+
+\subsection{Overview of data}
+From company we are provided data in excel with seperate  for claimed and unclaimed data. The column in excel  have also lots of fields and were in improper format. For example some data are saved in nepali language. Some were saved in combination format.Some are with different being same data-kind.  Hence for better performance, we have to limit the size and data. Hence, we have extracted only six fields of the data. For modelling the dat we have use six data and result is store in  new data. Namely the attributes are Zone, CC of bike, Bike Manufacturer, Type cover , Lote, Manufacture Year and the Claim status. The data were too random and dirty. Hence we have to make them easier and reliable which we have done in the data pre-processing phase.
+\subsection{Data Pre-processing}
+The entire data was in excel format before using it for system, We select the a required field in excel and extract it then we came to know the most of data are in  nepali format including date so we have manually convert the data in english form and in desire format like two letter for Zone(BA for Bagmati,SE for Seti and so on),CC of bike in form interval. Some of record have empty cell so rejected them. We used different program to extract data from excel to \acs{sql} for easy access. After selecting certain no of record we found that there is huge variation of between claimed and unclaimed data.
+\subsection{Data Smoothing}
+To keep the variation between two type of data low , we use data smoothing techniques called \acs{smote}.What it does is that it avoid overfitting which occurs when exact replicas of minority instances are added to the main dataset. After this process we data at ratio of . Which previously was .....
+\subsection{Model by Na\"{\i}ve Bayesian Classifier}
+\subsection{Training model}
+\subsection{Testing model}
+\subsection{Final System Result}
+\subsection{Reporting}
+\subsection{Visualization}
+
+
+
+
+\section{Algorithms and Flowchart}
+\subsection{Algorithm}
 \begin{itemize}
 \item Problem Statement
 
@@ -622,11 +658,20 @@ $P(C_j)*P(A_i|C_j)$ is maximum.
 \end{itemize}
 
 \end{itemize}
+\newpage
+\subsection{Flow Chart}
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[height=7in]{images/systemflow.png}
+	\caption{Flow Chart Of Project} %figure name
+	
+	\label{Flow Chart} % for referencing
+\end{center}
+\end{figure}
+\newpage
 
-
-
-\chapter{Methodology}
-\section{E-R Diagram}
+\section{Diagrams}
+\subsection{E-R Diagram}
 The Entity Relationship Diagram of the project:
 \par
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
@@ -637,21 +682,18 @@ The Entity Relationship Diagram of the project:
 	\label{ER} % for referencing
 \end{large}
 \end{figure}
+Entity of client bike:
+\begin{enumerate}
+\item
+\end{enumerate}
+
 \newpage
-\section{Flow Chart}
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	\includegraphics[height=7in]{images/systemflow.png}
-	\caption{Flow Chart Of Project} %figure name
-	
-	\label{Flow Chart} % for referencing
-\end{center}
-\end{figure}
 
 
-\pagebreak
+
+
 \newpage
-\section{Use-Case}
+\subsection{Use-Case}
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	\includegraphics[width = 6in]{images/uc.jpg}
@@ -662,7 +704,7 @@ The Entity Relationship Diagram of the project:
 
 In this project there will be three options. The customers information will be taken and based on which insurance to be done is decided. Report and Visualization of data based on various attributes can be done which helps to know the progress of an insurance company.
 \newpage
-\section{Class  Diagram}
+\subsection{Class  Diagram}
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	\includegraphics[width = 6in]{images/Cd.png}
@@ -673,7 +715,7 @@ In this project there will be three options. The customers information will be t
 
 
 \newpage
-\section{Sequence Diagram}
+\subsection{Sequence Diagram}
 \begin{figure}[H] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	\includegraphics[width = 6in]{images/TrainingSequence.png}
@@ -700,7 +742,7 @@ In this project there will be three options. The customers information will be t
 \end{figure}
 
 \newpage
-\section{Collaboration Diagram}
+\subsection{Collaboration Diagram}
 
 \begin{figure}[H] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
@@ -788,13 +830,22 @@ Using Na\"{\i}ve Bayesian Classifier, we created the model based upon the data o
 \end{figure}
 
 
+
+\chapter{Conclusion and Scope for Future Enhancement}
+\section{Conclusion}
+\par
+This \textbf{"Project-X: Business Intelligence for Bike Insurance"} is business intelligence system as suggest by name.\acl{bi}(\acs{bi}) comprises the strategies and technologies used by enterprises for the data analysis of business information. It use for analysis of data to get a result for business strategy.
+\par Most of big and giant company like Google, Microsoft etc. have their business intelligence namely Google Cloud BI solution of Google and Microsoft Power BI, they are also for public use you can it for your purpose. Other like Sisense and QlikSense are publically open. In all these system, all of then have a common point of view that they use customer data and analyse the data and represent the output in the form chart to analyse the result easily. These tools helps the company with giant data to visualize their business status and to develop new strategy for better enhance.
+\par 
+Hence, this intelligence system would be great to the currently growing world with full of data with generating GB of data every hours. Project-X is just small step in  business intelligence world. We were able to predict whether the enter data of bike can claimed the insurance or not. It was a great doing this Project as all member have collaborate with each other to make this possible and specially thank to \textbf{Mr.Ajay Mani Paudel} for guidance as supervisor.
+
+
 \section{Future Enhancement}
 \begin{enumerate}
 \item Increase domain to accommodate  all automobiles 
 \item Collects data from many insurance company as far as possible
 \item Connecting the system with the company server and update data simultaneously
 \end{enumerate}
-
 
 \renewcommand\bibname{References} % Change heading to References
 \bibliographystyle{IEEEtran} % to use IEEE Format for referencing

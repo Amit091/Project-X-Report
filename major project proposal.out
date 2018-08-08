@@ -36,19 +36,34 @@
 \BOOKMARK [2][-]{subsection.3.5.3}{Data Smoothing}{section.3.5}% 36
 \BOOKMARK [2][-]{subsection.3.5.4}{SOMTE Technique}{section.3.5}% 37
 \BOOKMARK [1][-]{section.3.6}{Confusion Matrix}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.7}{Implementing Algorithm}{chapter.3}% 39
-\BOOKMARK [0][-]{chapter.4}{Methodology}{}% 40
-\BOOKMARK [1][-]{section.4.1}{E-R Diagram}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.2}{Flow Chart}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.3}{Use-Case}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.4}{Class Diagram}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.5}{Sequence Diagram}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.6}{Collaboration Diagram}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.7}{Software Development Process}{chapter.4}% 47
-\BOOKMARK [0][-]{chapter.5}{Result and Discussion}{}% 48
-\BOOKMARK [1][-]{section.5.1}{Outputs}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.2}{Limitation}{chapter.5}% 50
-\BOOKMARK [1][-]{section.5.3}{Problems Faced}{chapter.5}% 51
-\BOOKMARK [1][-]{section.5.4}{Work Schedule}{chapter.5}% 52
-\BOOKMARK [1][-]{section.5.5}{Future Enhancement}{chapter.5}% 53
-\BOOKMARK [0][-]{Item.53}{References}{}% 54
+\BOOKMARK [0][-]{chapter.4}{Methodology}{}% 39
+\BOOKMARK [1][-]{subsection.4.0.1}{Data Collection}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.0.2}{Data Collection in Company}{subsection.4.0.1}% 41
+\BOOKMARK [2][-]{subsection.4.0.3}{Overview of data}{subsection.4.0.1}% 42
+\BOOKMARK [2][-]{subsection.4.0.4}{Data Pre-processing}{subsection.4.0.1}% 43
+\BOOKMARK [2][-]{subsection.4.0.5}{Data Smoothing}{subsection.4.0.1}% 44
+\BOOKMARK [2][-]{subsection.4.0.6}{Model by Na\357ve Bayesian Classifier}{subsection.4.0.1}% 45
+\BOOKMARK [2][-]{subsection.4.0.7}{Training model}{subsection.4.0.1}% 46
+\BOOKMARK [2][-]{subsection.4.0.8}{Testing model}{subsection.4.0.1}% 47
+\BOOKMARK [2][-]{subsection.4.0.9}{Final System Result}{subsection.4.0.1}% 48
+\BOOKMARK [2][-]{subsection.4.0.10}{Reporting}{subsection.4.0.1}% 49
+\BOOKMARK [2][-]{subsection.4.0.11}{Visualization}{subsection.4.0.1}% 50
+\BOOKMARK [1][-]{section.4.1}{Algorithms and Flowchart}{chapter.4}% 51
+\BOOKMARK [2][-]{subsection.4.1.1}{Algorithm}{section.4.1}% 52
+\BOOKMARK [2][-]{subsection.4.1.2}{Flow Chart}{section.4.1}% 53
+\BOOKMARK [1][-]{section.4.2}{Diagrams}{chapter.4}% 54
+\BOOKMARK [2][-]{subsection.4.2.1}{E-R Diagram}{section.4.2}% 55
+\BOOKMARK [2][-]{subsection.4.2.2}{Use-Case}{section.4.2}% 56
+\BOOKMARK [2][-]{subsection.4.2.3}{Class Diagram}{section.4.2}% 57
+\BOOKMARK [2][-]{subsection.4.2.4}{Sequence Diagram}{section.4.2}% 58
+\BOOKMARK [2][-]{subsection.4.2.5}{Collaboration Diagram}{section.4.2}% 59
+\BOOKMARK [1][-]{section.4.3}{Software Development Process}{chapter.4}% 60
+\BOOKMARK [0][-]{chapter.5}{Result and Discussion}{}% 61
+\BOOKMARK [1][-]{section.5.1}{Outputs}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.2}{Limitation}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.3}{Problems Faced}{chapter.5}% 64
+\BOOKMARK [1][-]{section.5.4}{Work Schedule}{chapter.5}% 65
+\BOOKMARK [0][-]{chapter.6}{Conclusion and Scope for Future Enhancement}{}% 66
+\BOOKMARK [1][-]{section.6.1}{Conclusion}{chapter.6}% 67
+\BOOKMARK [1][-]{section.6.2}{Future Enhancement}{chapter.6}% 68
+\BOOKMARK [0][-]{Item.54}{References}{}% 69
