@@ -25,6 +25,11 @@
 H.~Chen, R.~H. Chiang, and V.~C. Storey, ``Business intelligence and analytics:
   From big data to big impact.'' \emph{MIS quarterly}, vol.~36, no.~4, 2012.
 
+\bibitem{grevskott_2011}
+S.~Grevskott, \emph{Quantitative requirements for non-life insurance under
+  Solvency 2}.\hskip 1em plus 0.5em minus 0.4em\relax SAS Institute Inc, USA,
+  2011.
+
 \bibitem{insurance2015bike}
 S.~R. Insurance, ``Bike insurance,'' 2015.
 
@@ -40,7 +45,9 @@ B.~Garg, ``Design and development of naive bayes classifier,'' 2013.
 N.~Friedman, D.~Geiger, and M.~Goldszmidt, ``Bayesian network classifiers,''
   \emph{Machine learning}, vol.~29, no. 2-3, pp. 131--163, 1997.
 
-\bibitem{data2017}
-N.~I. Company, ``Insurance data,'' Kamaladi,Kathmandu, Tech. Rep., 2017.
+\bibitem{witten2016data}
+I.~H. Witten, E.~Frank, M.~A. Hall, and C.~J. Pal, \emph{Data Mining: Practical
+  machine learning tools and techniques}.\hskip 1em plus 0.5em minus
+  0.4em\relax Morgan Kaufmann, 2016.
 
 \end{thebibliography}

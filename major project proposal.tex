@@ -3,7 +3,7 @@
 %Define Macros for Details of your Project
 \newcommand{\project}{Major Project} %Specify "Major Project" or "Minor Project"
 \newcommand{\projectTitle}{"PROJECT X : A BUSINESS INTELLIGENCE FOR BIKE INSURANCE"} %specify "Title" of Your Project
-\newcommand{\doc}{Final Report} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
+\newcommand{\doc}{Pre-Final Report} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
 % Note that You have to sibmit "Final Report" for Pre-final defense as well.
 \newcommand{\subCode}{CT755} %specify Subject of Your Project
 \newcommand{\degree}{Bachelor in Computer Engineering} %specify your degree
@@ -19,8 +19,8 @@
 \newcommand{\submittedTo}{Department of Computer and Electronics Engineering} %specify your department
 \newcommand{\hod}{Er. Rabindra Khati} %specify Head ot the department
 \newcommand{\defYear}{2018} %Defense Year
-\newcommand{\defMonth}{July} %Defense Month- January, February, ...
-\newcommand{\defDay}{10} %specify Defense Day- 1, 2, ...
+\newcommand{\defMonth}{August} %Defense Month- January, February, ...
+\newcommand{\defDay}{12} %specify Defense Day- 1, 2, ...
 
 \newif
 \ifhassupervisor
@@ -118,19 +118,19 @@ There is no alternative for intelligence. What if intelligence used in gambling?
 \par
 \textbf{\textit{Keywords$-$}} Business Intelligence, Prediction, Analysis, Insurance 
 
-\chapter*{Acknowledgment}
-\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
-Write Acknowledgment Here. Ea his munere torquatos, quidam essent luptatum cu pro. Ei duo scaevola %electram. Vidit percipitur ut vim, ne his solet prodesset inciderint. Cum facilisi sententiae at, vis %noster electram contentiones cu. Nec at eius novum diceret.
-\par
-Second para of Acknowledgment. Sed veri aeque persecuti ut. Ut accusam mediocrem accusamus eos, quis %clita probatus ex his. Mea oratio deleniti interesset at. Odio melius antiopam eu his, ut nec tantas maiestatis ullamcorper. Ut numquam reprimique cum. Acknowledgement ENDS here.\par
+%\chapter*{Acknowledgment}
+%\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+%Write Acknowledgment Here. Ea his munere torquatos, quidam essent luptatum cu pro. Ei duo scaevola %electram. Vidit percipitur ut vim, ne his solet prodesset inciderint. Cum facilisi sententiae at, vis %noster electram contentiones cu. Nec at eius novum diceret.
+%\par
+%%Second para of Acknowledgment. Sed veri aeque persecuti ut. Ut accusam mediocrem accusamus eos, quis %clita probatus ex his. Mea oratio deleniti interesset at. Odio melius antiopam eu his, ut nec tantas maiestatis ullamcorper. Ut numquam reprimique cum. Acknowledgement ENDS here.\par
 
-to display members name under Acknowledgement
+%{to display members name under Acknowledgement
 \begin{flushright}
 \vskip -20pt
 \setstretch{1.2}
 \submittedBy
 \end{flushright}
-
+%
 %to adjust spacings for TOC, LOF, LOT
 {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -178,7 +178,7 @@ To predict and analyze the insurance historical data based on the claims, data c
 Some insurers have gone for non-scalable temporary solutions, which often fail to leverage the ever-increasing volumes of data. Hence, recognizing the need for an effective business a data warehouse cannot be the answer to all the information requirements hence it is also very important to set clear business objectives for the business intelligence solution with total top management support.
  \par
 \newpage
-\subsection{Insurance}
+\section{Insurance}
 A practice by which a company provides a guarantee of compensation for specified loss, damage, illness, or death in return for payment. 
 \subsection{Definition of Non-Life Insurance }
 Non-life insurance, also called property and casualty insurance, is a type of coverage that is very common and covers businesses and individuals. It protects them, monetarily, from disaster by providing money in the event of a financial loss. Before you purchase this type of insurance or if you already own any kind of non-life insurance, you should understand what it is.
@@ -194,16 +194,53 @@ Non-life insurance, also called property and casualty insurance, is a type of co
 
 \newpage
 \subsection{Insurance Risk}
-
+\begin{itemize}
+	\item Some examples of insurance risk:
+	\begin{enumerate}
+		\item Legal - litigation
+		\item Operational - mistakes, errors, etc.
+		\item Pricing - inadequate premiums
+        \item Regulatory - new requirements
+        \item Reputation - negative press
+	\end{enumerate}
+\end{itemize}
+A schematic overview over the different quantitative risk factors for non-life insurance can be given as:
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	\includegraphics[width = 5in]{images/ir.png}
-	\caption{Insurance Risk} %figure name
-	\caption*{Source: https://www.pinterest.co.uk/pin/534521049520207946/}
+	\caption{Insurance Risk}\cite{grevskott_2011} %figure name
+
 
 	\label{Risk type}% for referencing
 \end{center}
 \end{figure}
+\par
+Some of the type non-life insurance arelisted below:\cite{grevskott_2011}
+\begin{enumerate}
+
+
+\item \textbf{Operational Risk}
+\par
+Operational risk is usually considered as risks connected to the people, systems and processes in a business. This is a very broad group of risk and includes fraud, system failures, terrorism and employee compensation claims. The model for operational risk may be very complex with detailed models for each element influencing the risk, but simplified models based on some appropriate exposure figure is also common. For non-life insurance a factor of earned premium is commonly used.
+\par
+\item \textbf{Counter-party Risk}
+\par
+The risk of not receiving payment as agreed is often called counterparty or credit risk and the event is often called default. For non-life insurance the counterparty is often a reinsurer. The probability of default (PD) is often given by credit rating agencies like S\&S  and Moody’s. The value at risk is simply the amount at stake multiplied by the probability of default given by the rating agencies. An example of rating and default probabilities are: A further sophistication of this model is to give a distribution of the loss given default.
+\par
+\item \textbf{Market Risk}
+\par
+When modelling market risk we want to find how much the company assets may decrease due to change in the market factors. The four standard market risk factors are stock prices, interest rates, foreign exchange rates, and commodity prices. The actual portfolio of the company decides which factors are to be taken into consideration. Usually one wants to model these factors as time series and a lot of work is done in this field. However, most insurance companies will rely on Economic Scenario Generators (ESG) as a part of a risk management tool rather than develop own methods for market risk.
+
+
+\item \textbf{Insurance Risk}
+\par
+Insurance risk is the risk arising from the process of transferring risk from persons or companies to the insurance company and it is the fundamental business idea of an insurance company. It is usually divided in two main categories: underwriting risk and reserve risk. Underwriting risk is the risk arising from claims incurring in future accounting periods, while reserve risk is the risk arising from previous accounting periods.
+
+\item \textbf{Underwriting Risk}
+\par
+To be able to predict the claims for a future accounting period we need to know about the claims in previous accounting periods. We will show an example on how to model next periods claims based on historical claims. To give an example we have accumulated periodical claims data from two lines of business, health insurance and workman’s compensation insurance.
+
+\end{enumerate}
 
 \section{Crystal Report}
 Crystal Reports is a popular Windows-based report writer (report generation program) that allows a programmer to create reports from a variety of data sources with a minimum of written code. Developed by Seagate Software, Crystal Reports can access data from most widely-used databases and can integrate data from multiple databases within one report using \acl{odbc} (\acs{odbc}). Crystal Reports uses an ActiveX control called Crystal Report to establish a connection with another program. A programmer can set properties of the Crystal Report control during design time or at run time.
@@ -213,16 +250,22 @@ The programmer can use automation tools called Experts to be guided through comm
 \section{Problem Statement}
 The insurance industry worldwide is facing the challenges of deregulation, consolidation and convergence of financial services. There is today a pressing demand for cutting edge services of insurance business management and enriched customer experiences at a significantly lower cost. Our project aims to predict the risk behind bike insurance. It relates the information of the current customer and bike to the past data determining whether to make insurance or not.
 
+\newpage
 \section{Objectives}\label{sec:obj}
 The objectives of this project are:
 \begin{itemize}
-\item To predict the possibility to claim of bike insurance.
-\item To visualize the insurance performance. 
-\item To generate the claimed and unclaimed report.
+\item \textbf{To predict the possibility to claim of bike insurance}
+\par 
+\par We have created a classifier model with inputs CC of Bike, Bike Manufacturer, Lote, Zone, and Type Cover. And the claim status is given to determine the claim of the insurance. Hence, our system with the above mentioned parameter will be able to predict the possible claim.
+\item \textbf{To visualize the insurance performance} 
+\par 
+We have used bar chart to visualize the claim and un-claim data for each individual attributes. This visualization will show total insurance of particular field of particular attributes, claim count of that attribute un-claim count of that attribute. Hence our system visualize the overall performance of the insurance
+\item \textbf{To generate the claimed and unclaimed report}
+Report is another objective of our system. Our system allows user to select the particular attribute, then total claimed and unclaimed data count of particular field of an attribute is displayed simultaneously. This will report to the management level for the decision for overall performance of the insurance. System is able to print the report.
 \end{itemize}
 
 \section{Application}
-Project-X is a web application which analyze and visualize the user data. This project is specoally developed for insurance company. The application of this is help the  management level for policy making in insurance company. It provides visualization to the company. The visualization generate the report for claimed and unclaimed report separately with respective attributes. The report provides the management level with overall glance of the insurance to claim policy. The generated report is printable. Due to this , it required less human resource. In simple meaning it is decision support system for bike insurance company.
+Project-X is a web application which analyze and visualize the user data. This project is specally developed for insurance company. The application of this is help the  management level for policy making in insurance company. It provides visualization to the company. The visualization generate the report for claimed and unclaimed report separately with respective attributes. The report provides the management level with overall glance of the insurance to claim policy. The generated report is printable. Due to this , it required less human resource. In simple meaning it is decision support system for bike insurance company.
 
 \section{Project Features} \label{sec:feat}
 \begin{itemize}
@@ -473,7 +516,7 @@ When data collected over time displays random variation, smoothing techniques ca
 Different ways of data smoothing technique are:
 \begin{enumerate}
 %\renewcommand{\labelenumi}{\roman*.}
-\item Data Level approach: Resampling Techniques
+\item \textbf{Data Level approach: Resampling Techniques}
 	\begin{enumerate}
 	\item Random Under-Sampling
 	\item Random Over-Sampling
@@ -482,7 +525,7 @@ Different ways of data smoothing technique are:
 	\item Modified synthetic oversampling technique(MSMOTE)
 	\end{enumerate}
 
-\item Algorithmic Ensemble Techniques
+\item \textbf{Algorithmic Ensemble Techniques}
 	\begin{enumerate}
 	\item Bagging based
 	\item Boosting Based
@@ -495,11 +538,11 @@ Different ways of data smoothing technique are:
 
 \end{enumerate}
 \subsection{SOMTE Technique}
-SMOTE is short hand for Synthetic Minority Over Sampling Technique. This techniques is followed to avoid overfitting which occurs when exact replicas of minority instances are added to the main dataset. A subset of data taken from a minority class as an example and then synthetic similar instances are created. The synthetic instances are then added to the original dataset. Then the new data set is used to train the classifier models.
+\textbf{SMOTE} is short hand for Synthetic Minority Over Sampling Technique. This techniques is followed to avoid overfitting which occurs when exact replicas of minority instances are added to the main dataset. A subset of data taken from a minority class as an example and then synthetic similar instances are created. The synthetic instances are then added to the original dataset. Then the new data set is used to train the classifier models.\cite{witten2016data}
 \par 
 We have seperately perform data smoothing using R languages. We used SMOTE to balance the data of claimed and unclaimed data to maintain low variation and train the balanced data using Gradient boosting algorithm in R. 
 \par 
-This process significantly imapcats the accuracy of the predictive model.  By increasing its around accuracy by 20 percent .
+This process significantly impacts the accuracy of the predictive model.  By increasing its around accuracy by 20 \%.
 
 \section{Confusion Matrix}
 A confusion matrix is a table that is often used to describe the performance of a classification model (or "classifier") on a set of test data for which the true values are known. The confusion matrix itself is relatively simple to understand, but the related terminology can be confusing.	
@@ -516,14 +559,37 @@ Confusion matrix is 2x2 matrix with 4 variables with Actual true and false and P
 \end{large}
 \end{figure} 
 \par
-From figure:
+Terminology and derivatives from confusion matrix.
 \begin{enumerate}
-\item $Accuracy = \frac{TP+TN}{P+N}$
-	
-\end{enumerate}
+\item \textbf{Accuracy (ACC):}
+\par $$ACC = \frac{TP+TN}{P+N} =\frac{TP+TN}{Total}$$
 
+\item \textbf{Error (ERR):}
+\par $$ERR = \frac{FP+FN}{P+N} =\frac{FP+FN}{Total}$$
+
+
+\item \textbf{Sensitivity or True Positive Rate (TPR):}
+\par $$TPR = \frac{TP}{P}=\frac{TP}{TP+TN}$$
+
+\item \textbf{False Positive Rate (FPR):}
+\par $$fPR = \frac{FP}{N}=\frac{FP}{FP+TN}$$
+\item \textbf{Specificity or True Negative Rate(TNR):}
+\par $$TNR = \frac{TN}{N}=\frac{TN}{FP+TN•}$$
+
+\item \textbf{Positive Predictive Value(PPV):}
+\par $$PPV = \frac{TP}{TP+FP}$$
  
- 
+\item \textbf{Negative Positive Value(NPV):}
+\par $$NPV = \frac{TN}{TN+FN}$$ 
+
+\item \textbf{Negative Predictive Value(NPV):}
+\par $$ACC = \frac{TP+TN}{P+N}$$
+
+\item \textbf{F1 Score:}
+\par $$F1=\frac{2TP}{P+P'} $$
+
+
+\end{enumerate}
 
 \section{Implementing Algorithm}
 \begin{itemize}
@@ -667,11 +733,13 @@ We mainly divide our project into 3 phase.
 	As Initial phase, we mainly involved in researching about our project basic idea. We also visit company to get data insurance data that is vital for  our project. We have done most of front end. 
 	 \item[2.] \textbf{2nd Incremental Phase}
 	 \par 
-	 We started with implementing of algorithm and training and testing of data was done to find accuracy of data from collected data. We also get more data from company for further analysis of program.
+	 We started with implementing of algorithm and training and testing of data was done to find accuracy of data from collected data. We also get more data from company for further analysis of program. At this, point we were able make the system 60\% accurate. The accuracy remain low due to large variation in claimed and unclaimed data.
 	 \newpage
 	 \item[3.] \textbf{3rd Incremental Phase}
 	 \par 
-	 We completed almost of front end and back end. We tested our program with 70\% accuracy and crystal report %
+	 We completed all the system designing part. We tested our program with 82\% accuracy and crystal report. We were able to increase the accuracy by almost 20 \% by using the Data smoothing techniques.
+ We used SMOTE process to decrease the variation of data of claimed and unclaimed data. We generated the visual result for easy analysis.
+ 
 \end{enumerate}
 
 
@@ -682,18 +750,34 @@ We mainly divide our project into 3 phase.
 
 \chapter{Result and Discussion}
 \section{Outputs}
+We successfully completed the the Project-X an online platform to check whether to selected or rejected as per data entered. We have used a Na\"{\i}ve Bayesian Classifier for creation of model on the basis  of data we feed to the classifier that will predict the either to claimed or unclaimed the data.
+\par
+Data have been collected from Nepal Insurance Company, Kamaladi, Kathmandu and we have pre-processed and normalized data such that 5 lakhs data have been reduced to 6xxx. We have extract only six set of data from the bunch, We extract the data of 6 attributes namely Bike Manufacturer,Manufacture year,Bike CC, Bike zone, Bike Lote no and insurance type cover. These data were strings or the range of numeric data. These data are normalized to increase the accuracy and prevent from diverging.
+The normalized data are used to built up up the  model. Due to large variation of the claimed and unclaimed data, we use smoothing techniques to maintain the ratio.
+
+\par
+Using confusion matrix we have obtained 82\% accuracy. Using the same pre-processed and normalized data we have prepared report that can be printed and provided to individual member of management using Crystal Reporting and visualize through bar chart using feature of Visual Studio such that it depicts overall performance of the insurance of bike based on selected attributes.
+
+
 
 \section{Limitation}
+Using Na\"{\i}ve Bayesian Classifier, we created the model based upon the data of bike provided by company. Even though we have created a full working system it have some limitations.
+\begin{enumerate}
+\item Limited to the Bike Insurance only.
+\item Data Based on single company only.
+\item use of existing data only.
+\end{enumerate}
+
 
  
 \section{Problems Faced}
 \begin{itemize}
 \item Data filtering through various process. 
-\item Limited data.
+\item Limited no of claimed data.
 \item Implementing the Algorithm.
+\item Generating report.
 \end{itemize}
-%We are expecting an desktop application with starting form of our intelligent system, six inputs are %taken from this form as cast, zone, manufacturer details, cc, lote no, and type cover and based on this %the output of the neural network is calculated. The result determines whether there is risk or not for %insurance. Based on various attributes, report for claim and unclaim as well as visualization through bar %diagram can be viewed.
-\newpage
+
 \section{Work Schedule}
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
@@ -702,10 +786,14 @@ We mainly divide our project into 3 phase.
 	\label{Gantt chart} % for referencing
 \end{center}
 \end{figure}
-\newpage
-\chapter{Conclusion}
-\section{Conclusion}
+
+
 \section{Future Enhancement}
+\begin{enumerate}
+\item Increase domain to accommodate  all automobiles 
+\item Collects data from many insurance company as far as possible
+\item Connecting the system with the company server and update data simultaneously
+\end{enumerate}
 
 
 \renewcommand\bibname{References} % Change heading to References
