@@ -3,16 +3,16 @@
 %Define Macros for Details of your Project
 \newcommand{\project}{Major Project} %Specify "Major Project" or "Minor Project"
 \newcommand{\projectTitle}{"PROJECT X : A BUSINESS INTELLIGENCE FOR BIKE INSURANCE"} %specify "Title" of Your Project
-\newcommand{\doc}{Pre-Final Report} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
+\newcommand{\doc}{Final Report} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
 % Note that You have to sibmit "Final Report" for Pre-final defense as well.
 \newcommand{\subCode}{CT755} %specify Subject of Your Project
 \newcommand{\degree}{Bachelor in Computer Engineering} %specify your degree
 \newcommand{\submittedBy}%Specify Names and Roll/Symbol Numbers of the Project Group Members
 {
 %Edit Member Names and Roll/Symbol No. and adjust width (\makebox[width]) if necessary 
-\makebox[9cm]{Amit Dhoju \hfill [091/BCT/2071]}\\
-\makebox[9cm]{Kaushtup Bista \hfill [103/BCT/2071]}\\
-\makebox[9cm]{Roshi Maharajan \hfill [117/BCT/2071]}
+\makebox[9cm]{Amit Dhoju \hfill [44084]}\\
+\makebox[9cm]{Kaushtup Bista \hfill [44096]}\\
+\makebox[9cm]{Roshi Maharajan \hfill [44108]}
 %\makebox[9cm]{Member Name \hfill [Roll/Symbol No.]}\\
 } % Note that You must write your "Symbol Numbers"(Exam Roll Numbers) for Final Defenses
 
@@ -24,10 +24,10 @@
 
 \newif
 \ifhassupervisor
-\hassupervisorfalse % to display supervisor name use command- \hassupervisortrue
+\hassupervisortrue % to display supervisor name use command- \hassupervisortrue
  
 \newcommand{\supervisor}{Ajay Mani Paudel} % Specify Name of Supervisor for Major Project
-\newcommand{\degSup}{External Director} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
+\newcommand{\degSup}{Executive Director} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
 \newcommand{\external}{External's Name} %Specify Name of External for Major Project (Required for Black Book)
 \newcommand{\degExternal}{External's Designation\\Second Line of Designation (if required)} %Specify Name of External for Major Project (Required for Black Book) , use multiple lines (\\) if necessary
 
@@ -124,19 +124,25 @@ There is no alternative for intelligence. What if intelligence used in gambling?
 \par
 \textbf{\textit{Keywords$-$}} Business Intelligence, Prediction, Analysis, Insurance 
 
-%\chapter*{Acknowledgment}
-%\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
-%Write Acknowledgment Here. Ea his munere torquatos, quidam essent luptatum cu pro. Ei duo scaevola %electram. Vidit percipitur ut vim, ne his solet prodesset inciderint. Cum facilisi sententiae at, vis %noster electram contentiones cu. Nec at eius novum diceret.
-%\par
-%%Second para of Acknowledgment. Sed veri aeque persecuti ut. Ut accusam mediocrem accusamus eos, quis %clita probatus ex his. Mea oratio deleniti interesset at. Odio melius antiopam eu his, ut nec tantas maiestatis ullamcorper. Ut numquam reprimique cum. Acknowledgement ENDS here.\par
+\chapter*{Acknowledgment}
+\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+We would like to thank to the head of the department of \textbf{Computer and Electronics} for providing this opportunity to undertake this project and for arranging hardware and software materials for the research.
+\par
+We cannot remain thanking, \textbf{Er. Ajay Mani Poudel} for sharing knowledge regarding Artificial Intelligence, Data pre-processing and provided valuable guidance for Documentation and guided each and every step towards the successful end of the project. 
+\par
+We would also like to thank our teachers \textbf{Er. Rabindra Khati, Er. Ravi Chandra Koirala, Er. Dipesh Shrestha, Er. Tirtha Acharya, Er. Tek Nath Adhikari, Er. Ankit Shekhar Acharya, Er. Bishal Thapa, Er. Srijal Joshi} for their valuable suggestions and wishes towards the further development of the project. 
+\par 
+Our thanks and appreciation to our fellow classmate \textbf{Mr. Amit Shrestha} for helping us during the difficult phase of our project development.
 
-%{to display members name under Acknowledgement
+\par
+We would like to express our gratitude to the authors of various papers that helped us gain the in-depth knowledge of various aspects. Finally, we would like to thank all the people who are directly or indirectly related for the successful completion of this project.
+
 \begin{flushright}
 \vskip -20pt
 \setstretch{1.2}
 \submittedBy
 \end{flushright}
-%
+
 %to adjust spacings for TOC, LOF, LOT
 {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -251,7 +257,7 @@ To be able to predict the claims for a future accounting period we need to know 
 \section{Crystal Report}
 Crystal Reports is a popular Windows-based report writer (report generation program) that allows a programmer to create reports from a variety of data sources with a minimum of written code. Developed by Seagate Software, Crystal Reports can access data from most widely-used databases and can integrate data from multiple databases within one report using \acl{odbc} (\acs{odbc}). Crystal Reports uses an ActiveX control called Crystal Report to establish a connection with another program. A programmer can set properties of the Crystal Report control during design time or at run time.
 \par
-The programmer can use automation tools called Experts to be guided through common tasks, such as linking and embedding reports. Crystal Reports treats all text, graphics, and database fields as object s that a programmer can place, arrange, and format on forms. The program also generates a record set object and code needed to perform programming tasks such as loop s or mathematical calculations. Crystal Reports can create a report on the fly from user-defined variables and can convert it to HTML and publish it to the Web automatically. 
+The programmer can use automation tools called Experts to be guided through common tasks, such as linking and embedding reports. Crystal Reports treats all text, graphics, and database fields as objects that a programmer can place, arrange, and format on forms. The program also generates a record set object and code needed to perform programming tasks such as loops or mathematical calculations. Crystal Reports can create a report on the fly from user-defined variables and can convert it to HTML and publish it to the Web automatically. 
 
 \section{Problem Statement}
 The insurance industry worldwide is facing the challenges of deregulation, consolidation and convergence of financial services. There is today a pressing demand for cutting edge services of insurance business management and enriched customer experiences at a significantly lower cost. Our project aims to predict the risk behind bike insurance. It relates the information of the current customer and bike to the past data determining whether to make insurance or not.
@@ -262,7 +268,7 @@ The objectives of this project are:
 \begin{itemize}
 \item \textbf{To predict the possibility to claim of bike insurance}
 \par 
-\par We have created a classifier model with inputs CC of Bike, Bike Manufacturer, Lote, Zone, and Type Cover. And the claim status is given to determine the claim of the insurance. Hence, our system with the above mentioned parameter will be able to predict the possible claim.
+\par We have created a classifier model with inputs CC of Bike, Bike Manufacturer,Year Manufacture Lote, Zone, and Type Cover. And the claim status is given to determine the claim of the insurance. Hence, our system with the above mentioned parameter will be able to predict the possible claim.
 \item \textbf{To visualize the insurance performance} 
 \par 
 We have used bar chart to visualize the claim and un-claim data for each individual attributes. This visualization will show total insurance of particular field of particular attributes, claim count of that attribute un-claim count of that attribute. Hence our system visualize the overall performance of the insurance
@@ -271,11 +277,10 @@ Report is another objective of our system. Our system allows user to select the 
 \end{itemize}
 
 \section{Application}
-Project-X is a web application which analyze and visualize the user data. This project is specally developed for insurance company. The application of this is help the  management level for policy making in insurance company. It provides visualization to the company. The visualization generate the report for claimed and unclaimed report separately with respective attributes. The report provides the management level with overall glance of the insurance to claim policy. The generated report is printable. Due to this , it required less human resource. In simple meaning it is decision support system for bike insurance company.
+Project-X is a web application which analyze and visualize the user data. This project is specially developed for insurance company. The application of this is help the  management level for policy making in insurance company. It provides visualization to the company. The visualization generate the report for claimed and unclaimed report separately with respective attributes. The report provides the management level with overall glance of the insurance to claim policy. The generated report is printable. Due to this , it required less human resource. In simple meaning it is decision support system for bike insurance company.
 
 \section{Project Features} \label{sec:feat}
 \begin{itemize}
-\item Claimed and unclaimed report generation based on various attributes.
 \item Insurance performance can be visualized. 
 \item Business Intelligence Report (Crystal Report). 
 \end{itemize}
@@ -292,13 +297,13 @@ Project-X is a web application which analyze and visualize the user data. This p
 The economic feasibility of the software refers to the cost of its creation, cost required
 to launch the system and its efficiency in terms of cost after its launch to real platform.
 It determine whether the project is economically and logically possible or not.  This
-project reduces the operations and maintenance cost of IT infrastructures
+project reduces the operations and maintenance cost of IT infrastructures.
 
 \subsection{Technical Feasibility}
 This feasibility includes the software and hardware used for project.As this project will be developed using 'C sharp' as programming language and simply using the logical concept, it won't require sophisticated equipment. A PC with any Operating System with a browser and network will be able to run the software. Almost all current devices support the surfing the network. Thus watching overall ,this project is technically feasible.
 
 \subsection{Operational Feasibility}
-A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of a project. As a webpage, it can be anywhere at any time after it deployment to the server. Our project provides user friendly platform, people with simple knowledge of computer can operate easily and the system can perform the rest operation.
+A feasibility study aims to objectively and rationally uncover the strengths and weaknesses of a project. As a webpage, it can be anywhere at any time after its deployment to the server. Our project provides user friendly platform, people with simple knowledge of computer can operate easily and the system can perform the rest operation.
 
 \newpage
 \section{System Requirement}
@@ -341,7 +346,7 @@ Some Previously developed platform:
 \section{Sisense}
  \par
 Sisense is \acl{bi} software by Sisense Inc.,the  industry in for complex data-easily prepare analyze and explore growing  data from multiple sources. Sisense is awarded with \textbf{Best \acl{bi} Software for    2016}. It is the business analytics software that lets you easily
-prepare and analyze big, scattered datasets. it have 3 types of user 
+prepare and analyze big, scattered dataset. it have 3 types of user 
 \begin{enumerate}
 \item[i.] Admin : Can access all features of Application.
 \item[ii.] Designer : Mainly to design the elastic cubes and all admin function except Serve and user management.
@@ -357,8 +362,8 @@ prepare and analyze big, scattered datasets. it have 3 types of user
 \end{enumerate}
 \par
 \subsection{How Sisense work}
-Sisense is webapp that work on  both Computer or in smartphones. It works on the dashboard system with Elastic Cubes which is the proprietary analytical tools database that enables to connect multiple data sources and run complex queries in split of second. The data sources that can be used with sisense are file-based data sources (Excel ,\acs{csv}), Traditional database (\acs{sql}, MySQL, Oracle) and Online Web-Services(Google adwords). Data sources are added in elastic cube manager.
- Different  types of data sources can be added in same cube. Any two field with same type of data on different data sources and be connected by drag and  drop facility of sisense. At last, by building elastic cubes the data will be pull form data sources into elastic cube. When the result is ready it is ready for calculation and the result can be visualize in multiple form.
+Sisense is web-application that work on  both Computer or in smartphones. It works on the dashboard system with Elastic Cubes which is the proprietary analytical tools database that enables to connect multiple data sources and run complex queries in split of second. The data sources that can be used with Sisense are file-based data sources (Excel ,\acs{csv}), Traditional database (\acs{sql}, MySQL, Oracle) and Online Web-Services(Google adwords). Data sources are added in elastic cube manager.
+ Different  types of data sources can be added in same cube. Any two field with same type of data on different data sources and be connected by drag and  drop facility of Sisense. At last, by building elastic cubes the data will be pull form data sources into elastic cube. When the result is ready it is ready for calculation and the result can be visualize in multiple form.
 \newpage
 
 \section{Qlik Sense}
@@ -428,7 +433,7 @@ Types of Learning models:
 \par
 Generative models summarize data probabilistically and are more flexible,since the user can bring in conditional independence assumptions, priors, and hidden variables. Generative classifiers learn a model of the joint probability of the variables and the related class label, and use Bayes’ theorem to compute the posterior probability of the class variable and make predictions. 
 
-\item[2.] \textbf{Discrimative Model}
+\item[2.] \textbf{Discriminative Model}
 \par
 Discriminative models (e.g.\acs{nn} and \acs{svm}) only learn from data to make accurate predictions by directly estimating the class posterior probability or via discriminant functions, and thus offer the user less flexibility in data representation and inference.
 \item[.] 
@@ -546,10 +551,24 @@ Different ways of data smoothing technique are:
 	\end{enumerate}
 
 \end{enumerate}
-\subsection{SOMTE Technique}
+\subsection{Laplace Smoothing}
+Laplace smoothing is an algorithm to smooth a polygonal mesh. For each vertex in a mesh, a new position is chosen based on local information (such as the position of neighbors) and the vertex is moved there. While checking the  probabilities of event if it occur none then the probability of this event is low, but it is not zero. Further, we  multiply all the probabilities during inference, even one such zero probability term will lead to the entire process failing. So, Laplace smoothing came to increase the zero probability values to a small positive number
+\par Laplace Smoothing can be achieved by:
+$$
+P(W_s) = \frac{C(W_s)+1}{N+V},
+$$
+Where,
+\begin{enumerate}
+\item P(w) is the  probability that attributes is zero,
+\item C(w) is the count of attributes w,
+\item N is the total number of attributes,
+\item V is the Constant
+\end{enumerate}
+
+\subsection{SMOTE Technique}
 \textbf{SMOTE} is short hand for Synthetic Minority Over Sampling Technique. This techniques is followed to avoid overfitting which occurs when exact replicas of minority instances are added to the main dataset. A subset of data taken from a minority class as an example and then synthetic similar instances are created. The synthetic instances are then added to the original dataset. Then the new data set is used to train the classifier models.\cite{witten2016data}
 \par 
-We have seperately perform data smoothing using R languages. We used SMOTE to balance the data of claimed and unclaimed data to maintain low variation and train the balanced data using Gradient boosting algorithm in R. 
+Data smoothing is usually performed using R languages. SMOTE is used to balance the data of claimed and unclaimed data to maintain low variation and train the balanced data using Gradient boosting algorithm in R. 
 \par 
 This process significantly impacts the accuracy of the predictive model.  By increasing its around accuracy by 20 \%.
 
@@ -562,7 +581,8 @@ Confusion matrix is 2x2 matrix with 4 variables with Actual true and false and P
 \begin{large}
 	\includegraphics[width=6in]{images/confusionmatrix.png}
 	\caption{Confusion Matrix} %figure name
-	%\caption*{Source: https://rasbt.github.io/mlxtend/user_guide/evaluate/confusion_matrix/}
+	
+	\caption*{$https://rasbt.github.io/mlxtend/user\_guide/evaluate/confusion\_matrix/$}
 	%\0caption*{Source: https://istqbexamcertification.com}
 	\label{Confusion matrix} % for referencing
 \end{large}
@@ -606,23 +626,49 @@ Terminology and derivatives from confusion matrix.
 \chapter{Methodology}
 
 \subsection{Data Collection}
-As our project is intelligence on bike insurance, we needed the real data to explore the reality on the bike insurance. We have collected data from Nepal Insurance Company Limited,Kamaladi , Kathmandu.\cite{data2017} We have about information about xxxxxxxx record from company.
+As our project is business intelligence on bike insurance, we needed the real data to explore the reality on the bike insurance. We have collected data from Nepal Insurance Company Limited,Kamaladi , Kathmandu.\cite{data2017} We have information about 1.6 Lakhs record from company.
 \subsection{Data Collection in Company}
-In this (Nepal Insurance company limited) company when user arrives at the company for the insurance in any branch, he/she submits the Xerox of blue book and motorcycle purchase bill and one photo of motorcycle owner. One then fills the proposal form. Proposal form contains all the related information. Then staff of insurance company entry the data in the software. When client makes claim, the research team makes research at the central corporate office located at kamaladi Kathmandu. And if the claim is responded positive the claimed data is again entered by the staff. This process goes on every branch of the company. Now the database data is written in DVD and send to the central office to combine data of the entire branch which is done by the IT staff of the central corporate company.
+In this (Nepal Insurance company limited) company when user arrives at the company for the insurance in any branch, he/she submits the Xerox of blue book and motorcycle purchase bill and one photo of motorcycle owner. One then fills the proposal form. Proposal form contains all the related information. Then staff of insurance company entry the data in the software. When client makes claim, the research team makes research at the central corporate office located at Kamaladi, Kathmandu. And if the claim is responded positive the claimed data is again entered by the staff. This process goes on every branch of the company. Now the database data is written in DVD and send to the central office to combine data of the entire branch which is done by the IT staff of the central corporate company.
 
 \subsection{Overview of data}
-From company we are provided data in excel with seperate  for claimed and unclaimed data. The column in excel  have also lots of fields and were in improper format. For example some data are saved in nepali language. Some were saved in combination format.Some are with different being same data-kind.  Hence for better performance, we have to limit the size and data. Hence, we have extracted only six fields of the data. For modelling the dat we have use six data and result is store in  new data. Namely the attributes are Zone, CC of bike, Bike Manufacturer, Type cover , Lote, Manufacture Year and the Claim status. The data were too random and dirty. Hence we have to make them easier and reliable which we have done in the data pre-processing phase.
+From company we are provided with data in excel format with claimed and unclaimed data. The column in excel have lots of fields and were in improper format. For example some data were saved in nepali language. Some were saved in combination format. Some are with different being same data-kind.  Hence for better performance, we have to limit the size and data. Hence, we have extracted only six fields of the data. For modelling the data we have used six attributes and result is stored as new data. Namely the attributes are Zone, CC of bike, Bike Manufacturer, Type cover , Lote, Manufacture Year and the Claim status. The data were too random and dirty. Hence we have to make them understandable and reliable which we have done in the data pre-processing phase.
 \subsection{Data Pre-processing}
-The entire data was in excel format before using it for system, We select the a required field in excel and extract it then we came to know the most of data are in  nepali format including date so we have manually convert the data in english form and in desire format like two letter for Zone(BA for Bagmati,SE for Seti and so on),CC of bike in form interval. Some of record have empty cell so rejected them. We used different program to extract data from excel to \acs{sql} for easy access. After selecting certain no of record we found that there is huge variation of between claimed and unclaimed data.
+The entire data was in excel format before using it for system, We selected the required field in excel and extracted it.The nepali format data were manually converted into the data in english form and in desire format like two letter for Zone(BA for Bagmati,SE for Seti and so on),CC of bike in form of interval. The missing and empty data were rejected. We converted excel file to \acs{csv} for easy access of required attributes. After selecting certain number of records we found that there is huge variation of between claimed and unclaimed data. Finally, the data was reduced to 3000.
 \subsection{Data Smoothing}
-To keep the variation between two type of data low , we use data smoothing techniques called \acs{smote}.What it does is that it avoid overfitting which occurs when exact replicas of minority instances are added to the main dataset. After this process we data at ratio of . Which previously was .....
+To keep the variation between two type of data low , we use data smoothing techniques called \acs{smote}.It avoids overfitting which occurs when exact replicas of minority instances are added to the main data-set. After this process the data was balanced between claimed and unclaimed and was increased to 6100.
 \subsection{Model by Na\"{\i}ve Bayesian Classifier}
+During implementation of Na\"{\i}ve Bayesian Classifier , firstly training set was classified into two parts i.e claimed data-set and unclaimed data-set.Since we had six attributes , we calculated the probability for both the claimed and unclaimed data for all respective values of six attributes.For e.g:For company name , probability of Claiming and Unclaiming of Honda , Yamaha, Suzuki,etc were calculated.The result was then stored in txt format.In this way we calculated the probability for
+the respective data and latter used it to predict whether the customer will claim or unclaim.
 \subsection{Training model}
-\subsection{Testing model}
-\subsection{Final System Result}
-\subsection{Reporting}
-\subsection{Visualization}
+All together there were 6100 data  after filtering.We had saved the data in the excel file in the *.csv format.These data were then stored to the MSSQL server database.Then the data were divided as  claimed and unclaimed data and were stored in different tables namely tblClaimData and tblUnClaimedData. Then the probability of distinct data of all six attributes were calculated by Na\"{\i}ve Bayesian Classifier by using Bayesian Theorem:
+\par\[P(A|B)=\frac{P(B|A)P(A)}{P(B)}\]
 
+Where,
+\begin{enumerate}
+\item P(A) is the prior probability of A , 
+\item P(B) is the prior probability of B ,
+\item $P(A | B)$ is the posterior probability of A given B \&
+\item $P(B | A)$ is the posterior probability of B given A
+\end{enumerate}
+
+\subsection{Testing model}
+We selected 10\% of data from the training set which included almost equal ratio of claimed and unclaimed data. Then for individual data their result was calculated i.e either 'yes' or 'no'.This result was compared with their expected output. Then, we checked the value for true positive (TP), true negative (TN), false positive (FP) and false negative (FN).
+\par We have constructed the confusion matrix and calculated the accuracy as follows:
+\par
+$$
+ Confusion Matrix =
+\begin{bmatrix}
+TP & FN \\
+FP & TN
+\end{bmatrix}
+$$
+\subsection{Final System Result}
+After training and testing the data and finally selecting the required attributes,our system will be able to predict the risk policy. If there is risk, message will be appear as "There is no Risk on Claiming" or "Yes There is Risk".
+\subsection{Reporting}
+Our system is able to produce report based on selected attributes.It will depict the claim count, unclaimed count for six different attributes of mentioned type.
+
+\subsection{Visualization}
+Our system is able to produce visualization bar chart based on the selected type of the attribute.It will depict the claim count,unclaimed count and total count of attribute of mentioned type.We have used javascript to make the bar chart more interactive and understandable.
 
 
 
@@ -682,10 +728,7 @@ The Entity Relationship Diagram of the project:
 	\label{ER} % for referencing
 \end{large}
 \end{figure}
-Entity of client bike:
-\begin{enumerate}
-\item
-\end{enumerate}
+
 
 \newpage
 
@@ -792,15 +835,23 @@ We mainly divide our project into 3 phase.
 
 \chapter{Result and Discussion}
 \section{Outputs}
-We successfully completed the the Project-X an online platform to check whether to selected or rejected as per data entered. We have used a Na\"{\i}ve Bayesian Classifier for creation of model on the basis  of data we feed to the classifier that will predict the either to claimed or unclaimed the data.
+We successfully completed the Project-X an online platform to check whether to selected or rejected as per data entered. We have used a Na\"{\i}ve Bayesian Classifier for creation of model on the basis  of data we feed to the classifier that will predict the either to claimed or unclaimed the data.
 \par
-Data have been collected from Nepal Insurance Company, Kamaladi, Kathmandu and we have pre-processed and normalized data such that 5 lakhs data have been reduced to 6xxx. We have extract only six set of data from the bunch, We extract the data of 6 attributes namely Bike Manufacturer,Manufacture year,Bike CC, Bike zone, Bike Lote no and insurance type cover. These data were strings or the range of numeric data. These data are normalized to increase the accuracy and prevent from diverging.
-The normalized data are used to built up up the  model. Due to large variation of the claimed and unclaimed data, we use smoothing techniques to maintain the ratio.
+Data have been collected from Nepal Insurance Company, Kamaladi, Kathmandu and we have pre-processed and normalized data such that 1.6 lakhs data have been reduced to 3000. We have extract only six set of data from the bunch, We extracted the data of 6 attributes namely Bike Manufacturer,Manufacture year,Bike CC, Bike zone, Bike Lote no and insurance type cover. These data were strings or the range of numeric data. These data are normalized to increase the accuracy and prevent from diverging.
+The normalized data are used to built up the  model. Due to large variation of the claimed and unclaimed data, we use smoothing techniques to maintain the ratio.
 
 \par
 Using confusion matrix we have obtained 82\% accuracy. Using the same pre-processed and normalized data we have prepared report that can be printed and provided to individual member of management using Crystal Reporting and visualize through bar chart using feature of Visual Studio such that it depicts overall performance of the insurance of bike based on selected attributes.
 
 
+\newpage
+\section{Problems Faced}
+\begin{itemize}
+\item Data filtering through various process. 
+\item Limited no of claimed data.
+\item Implementing the Algorithm.
+\item Generating report.
+\end{itemize}
 
 \section{Limitation}
 Using Na\"{\i}ve Bayesian Classifier, we created the model based upon the data of bike provided by company. Even though we have created a full working system it have some limitations.
@@ -811,23 +862,63 @@ Using Na\"{\i}ve Bayesian Classifier, we created the model based upon the data o
 \end{enumerate}
 
 
- 
-\section{Problems Faced}
-\begin{itemize}
-\item Data filtering through various process. 
-\item Limited no of claimed data.
-\item Implementing the Algorithm.
-\item Generating report.
-\end{itemize}
-
 \section{Work Schedule}
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
-	\includegraphics[width=5in]{images/gantt.png}
+	\includegraphics[width=4in]{images/Capture.JPG}
 	\caption{Gantt Chart} %figure name
 	\label{Gantt chart} % for referencing
 \end{center}
 \end{figure}
+
+\newpage
+\section{Screenshots}
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width=4in]{images/Screenshot1.png}
+	\caption{landing Page} %figure name
+	\label{Homepage} % for referencing
+\end{center}
+\end{figure}
+
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width=4in]{images/Screenshot2.png}
+	\caption{System Output} %figure name
+	\label{Scr} % for referencing
+\end{center}
+\end{figure}
+
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width=4in]{images/Screenshot3.png}
+	\caption{Crystal Report} %figure name
+	\label{Crystal Report} % for referencing
+\end{center}
+\end{figure}
+
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width=4in]{images/Screenshot4.png}
+	\caption{Bar Diagram}  %figure name
+	\label{Output Preview} % for referencing
+\end{center}
+\end{figure}
+\newpage
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	\includegraphics[width=4in]{images/Screenshot5.png}
+	\caption{Confusion matrix}  %figure name
+	\label{Tesing Output Confusion Matrix} % for referencing
+\end{center}
+\end{figure}
+
+
+
+
+
+
+
 
 
 
@@ -837,7 +928,7 @@ Using Na\"{\i}ve Bayesian Classifier, we created the model based upon the data o
 This \textbf{"Project-X: Business Intelligence for Bike Insurance"} is business intelligence system as suggest by name.\acl{bi}(\acs{bi}) comprises the strategies and technologies used by enterprises for the data analysis of business information. It use for analysis of data to get a result for business strategy.
 \par Most of big and giant company like Google, Microsoft etc. have their business intelligence namely Google Cloud BI solution of Google and Microsoft Power BI, they are also for public use you can it for your purpose. Other like Sisense and QlikSense are publically open. In all these system, all of then have a common point of view that they use customer data and analyse the data and represent the output in the form chart to analyse the result easily. These tools helps the company with giant data to visualize their business status and to develop new strategy for better enhance.
 \par 
-Hence, this intelligence system would be great to the currently growing world with full of data with generating GB of data every hours. Project-X is just small step in  business intelligence world. We were able to predict whether the enter data of bike can claimed the insurance or not. It was a great doing this Project as all member have collaborate with each other to make this possible and specially thank to \textbf{Mr.Ajay Mani Paudel} for guidance as supervisor.
+Hence, this intelligence system would be great to the currently growing world with full of data with generating GB of data every hours. Project-X is just small step in  business intelligence world. We were able to predict whether the enter data of bike had insurance risk or not. It was a great experience doing this Project as all member have collaborated with each other to make this possible and specially thank to \textbf{Mr.Ajay Mani Paudel} for guidance as supervisor.
 
 
 \section{Future Enhancement}
@@ -845,6 +936,7 @@ Hence, this intelligence system would be great to the currently growing world wi
 \item Increase domain to accommodate  all automobiles 
 \item Collects data from many insurance company as far as possible
 \item Connecting the system with the company server and update data simultaneously
+\item Prediction on  the persona basis
 \end{enumerate}
 
 \renewcommand\bibname{References} % Change heading to References

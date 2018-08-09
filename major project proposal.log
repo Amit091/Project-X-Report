@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.5.1)  8 AUG 2018 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.5.1)  9 AUG 2018 12:08
 entering extended mode
 **"./major project proposal.tex"
 ("major project proposal.tex"
@@ -1015,7 +1015,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 109.
 
-<images/logo.png, id=279, 102.3825pt x 102.3825pt>
+<images/logo.png, id=291, 102.3825pt x 102.3825pt>
 File: images/logo.png Graphic file (type png)
  <use images/logo.png>
 Package pdftex.def Info: images/logo.png used on input line 109.
@@ -1048,24 +1048,25 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 125.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] ("major project proposal.toc" [2
+] [2
 
-] [3])
+] ("major project proposal.toc" [3
+
+] [4])
 \tf@toc=\write4
 \openout4 = `"major project proposal.toc"'.
 
- [4] ("major project proposal.lof")
+ [5] ("major project proposal.lof")
 \tf@lof=\write5
 \openout5 = `"major project proposal.lof"'.
 
-
-[5
+ [6
 
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 169.
- [6
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 175.
+ [7
 
 ]
 Chapter 1.
@@ -1079,25 +1080,25 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.186 \newpage
+l.192 \newpage
                [1
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 195.
  [2]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 204.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 210.
 
 
 ("C:\Users\amitd\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 204.
-<images/ir.png, id=430, 686.565pt x 380.92313pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 210.
+<images/ir.png, id=459, 686.565pt x 380.92313pt>
 File: images/ir.png Graphic file (type png)
  <use images/ir.png>
-Package pdftex.def Info: images/ir.png used on input line 216.
+Package pdftex.def Info: images/ir.png used on input line 222.
 (pdftex.def)             Requested size: 361.34999pt x 200.48167pt.
  [3 <./images/ir.png>]
 Missing character: There is no â in font ptmr7t!
@@ -1106,12 +1107,18 @@ Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [4] [5] [6] [7] [8]
+ [4] [5]
+Overfull \hbox (5.20148pt too wide) in paragraph at lines 271--272
+[]\OT1/ptm/m/n/12 We have cre-ated a clas-si-fier model with in-puts CC of Bike
+, Bike Man-u-fac-turer,Year
+ []
+
+[6] [7] [8]
 Chapter 2.
 [9
 
 ] [10]
-Underfull \hbox (badness 6575) in paragraph at lines 365--368
+Underfull \hbox (badness 6575) in paragraph at lines 370--373
 \OT1/ptm/m/n/12 all his data, in-stantly piv-ot-ing your anal-y-sis when new id
 eas surface.[[]]
  []
@@ -1130,7 +1137,7 @@ Missing character: There is no ™ in font ptmr7t!
 [12
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 417--419
+Underfull \hbox (badness 10000) in paragraph at lines 422--424
 \OT1/ptm/m/n/12 of classes is used to train as classifier.[[]]
  []
 
@@ -1141,11 +1148,11 @@ Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- <images/naivebayesian.jpg, id=515, 604.2575pt x 274.02374pt>
+ <images/naivebayesian.jpg, id=544, 604.2575pt x 274.02374pt>
 File: images/naivebayesian.jpg Graphic file (type jpg)
 
 <use images/naivebayesian.jpg>
-Package pdftex.def Info: images/naivebayesian.jpg used on input line 443.
+Package pdftex.def Info: images/naivebayesian.jpg used on input line 448.
 (pdftex.def)             Requested size: 289.07999pt x 131.09505pt.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
@@ -1156,39 +1163,39 @@ Missing character: There is no € in font ptmr7t!
 Missing character: There is no ¢ in font ptmr7t!
 
 [15] [16]
-Overfull \hbox (27.96841pt too wide) in paragraph at lines 533--534
+Overfull \hbox (27.96841pt too wide) in paragraph at lines 538--539
 []\OT1/ptm/m/n/12 Informed Over Sam-pling:Synthetic Mi-nor-ity Over Sam-pling T
 ech-nique (SMOTE) 
  []
 
-[17] <images/confusionmatrix.png, id=548, 207.77625pt x 164.11313pt>
+[17] <images/confusionmatrix.png, id=580, 207.77625pt x 164.11313pt>
 File: images/confusionmatrix.png Graphic file (type png)
 
 <use images/confusionmatrix.png>
-Package pdftex.def Info: images/confusionmatrix.png used on input line 563.
+Package pdftex.def Info: images/confusionmatrix.png used on input line 582.
 (pdftex.def)             Requested size: 433.62pt x 342.53922pt.
 
-Overfull \hbox (16.78711pt too wide) in paragraph at lines 563--564
+Overfull \hbox (16.78711pt too wide) in paragraph at lines 582--583
 [][] 
  []
 
-[18 <./images/confusionmatrix.png>]
+[18]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
- [19]
+ [19 <./images/confusionmatrix.png>] [20]
 Chapter 4.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 608.
+(hyperref)                than one, level fixed on input line 628.
 
 
-LaTeX Warning: Citation `data2017' on page 20 undefined on input line 609.
+LaTeX Warning: Citation `data2017' on page 21 undefined on input line 629.
 
-[20
+[21
 
-] [21]
-Overfull \hbox (0.60564pt too wide) in paragraph at lines 653--654
+] [22] [23] [24]
+Overfull \hbox (0.60564pt too wide) in paragraph at lines 699--700
 []$\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A[]; A[]; A[]:::::A[]\OM
 S/cmsy/m/n/12 j\OML/cmm/m/it/12 C\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 P\OT1/cmr/m/
 n/12 (\OML/cmm/m/it/12 C\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (
@@ -1200,151 +1207,189 @@ A[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :::P
 /cmr/m/n/12 )$\OT1/ptm/m/n/12 . 
  []
 
-[22] [23] <images/systemflow.png, id=585, 427.5975pt x 511.9125pt>
+[25] <images/systemflow.png, id=630, 427.5975pt x 511.9125pt>
 File: images/systemflow.png Graphic file (type png)
 
 <use images/systemflow.png>
-Package pdftex.def Info: images/systemflow.png used on input line 665.
+Package pdftex.def Info: images/systemflow.png used on input line 711.
 (pdftex.def)             Requested size: 422.56598pt x 505.89pt.
 
-Overfull \hbox (5.7331pt too wide) in paragraph at lines 665--666
+Overfull \hbox (5.7331pt too wide) in paragraph at lines 711--712
  [] 
  []
 
-[24 <./images/systemflow.png>]
-<images/ER.jpg, id=591, 625.58719pt x 377.15906pt>
+[26 <./images/systemflow.png>]
+<images/ER.jpg, id=636, 625.58719pt x 377.15906pt>
 File: images/ER.jpg Graphic file (type jpg)
  <use images/ER.jpg>
-Package pdftex.def Info: images/ER.jpg used on input line 680.
+Package pdftex.def Info: images/ER.jpg used on input line 726.
 (pdftex.def)             Requested size: 433.62pt x 261.4313pt.
 
-Overfull \hbox (16.78711pt too wide) in paragraph at lines 680--681
+Overfull \hbox (16.78711pt too wide) in paragraph at lines 726--727
 [][] 
  []
 
-[25 <./images/ER.jpg>] <images/uc.jpg, id=597, 662.475pt x 471.26062pt>
+[27 <./images/ER.jpg>] <images/uc.jpg, id=641, 662.475pt x 471.26062pt>
 File: images/uc.jpg Graphic file (type jpg)
 
 <use images/uc.jpg>
-Package pdftex.def Info: images/uc.jpg used on input line 699.
+Package pdftex.def Info: images/uc.jpg used on input line 742.
 (pdftex.def)             Requested size: 433.62pt x 308.45865pt.
 
-Overfull \hbox (16.78711pt too wide) in paragraph at lines 699--700
+Overfull \hbox (16.78711pt too wide) in paragraph at lines 742--743
  [] 
  []
 
-[26 <./images/uc.jpg>] <images/Cd.png, id=602, 853.1875pt x 651.43375pt>
+[28 <./images/uc.jpg>] <images/Cd.png, id=647, 853.1875pt x 651.43375pt>
 File: images/Cd.png Graphic file (type png)
 
 <use images/Cd.png>
-Package pdftex.def Info: images/Cd.png used on input line 710.
+Package pdftex.def Info: images/Cd.png used on input line 753.
 (pdftex.def)             Requested size: 433.62pt x 331.0837pt.
 
-Overfull \hbox (16.78711pt too wide) in paragraph at lines 710--711
+Overfull \hbox (16.78711pt too wide) in paragraph at lines 753--754
  [] 
  []
 
-[27 <./images/Cd.png>]
-<images/TrainingSequence.png, id=607, 869.2475pt x 483.8075pt>
+[29 <./images/Cd.png>]
+<images/TrainingSequence.png, id=652, 869.2475pt x 483.8075pt>
 File: images/TrainingSequence.png Graphic file (type png)
 
 <use images/TrainingSequence.png>
-Package pdftex.def Info: images/TrainingSequence.png used on input line 721.
+Package pdftex.def Info: images/TrainingSequence.png used on input line 764.
 (pdftex.def)             Requested size: 433.62pt x 241.34949pt.
 
-Overfull \hbox (16.78711pt too wide) in paragraph at lines 721--722
+Overfull \hbox (16.78711pt too wide) in paragraph at lines 764--765
  [] 
  []
 
-<images/TestingSequence.png, id=608, 928.46875pt x 462.72874pt>
+<images/TestingSequence.png, id=653, 928.46875pt x 462.72874pt>
 File: images/TestingSequence.png Graphic file (type png)
 
 <use images/TestingSequence.png>
-Package pdftex.def Info: images/TestingSequence.png used on input line 730.
+Package pdftex.def Info: images/TestingSequence.png used on input line 773.
 (pdftex.def)             Requested size: 433.62pt x 216.11276pt.
 
-Overfull \hbox (16.78711pt too wide) in paragraph at lines 730--731
+Overfull \hbox (16.78711pt too wide) in paragraph at lines 773--774
  [] 
  []
 
-<images/Sequence.png, id=609, 316.93407pt x 666.23906pt>
+<images/Sequence.png, id=654, 316.93407pt x 666.23906pt>
 File: images/Sequence.png Graphic file (type png)
 
 <use images/Sequence.png>
-Package pdftex.def Info: images/Sequence.png used on input line 738.
+Package pdftex.def Info: images/Sequence.png used on input line 781.
 (pdftex.def)             Requested size: 309.43262pt x 650.43pt.
- [28 <./images/TrainingSequence.png> <./images/TestingSequence.png>] [29 <./ima
+ [30 <./images/TrainingSequence.png> <./images/TestingSequence.png>] [31 <./ima
 ges/Sequence.png>]
-<images/Collaboration.png, id=622, 840.13875pt x 646.415pt>
+<images/Collaboration.png, id=666, 840.13875pt x 646.415pt>
 File: images/Collaboration.png Graphic file (type png)
 
 <use images/Collaboration.png>
-Package pdftex.def Info: images/Collaboration.png used on input line 749.
+Package pdftex.def Info: images/Collaboration.png used on input line 792.
 (pdftex.def)             Requested size: 433.62pt x 333.6324pt.
 
-Overfull \hbox (16.78711pt too wide) in paragraph at lines 749--750
+Overfull \hbox (16.78711pt too wide) in paragraph at lines 792--793
  [] 
  []
 
-[30 <./images/Collaboration.png>]
-<images/sdlc.png, id=628, 462.22687pt x 249.18094pt>
+[32 <./images/Collaboration.png>]
+<images/sdlc.png, id=672, 462.22687pt x 249.18094pt>
 File: images/sdlc.png Graphic file (type png)
  <use images/sdlc.png>
-Package pdftex.def Info: images/sdlc.png used on input line 761.
+Package pdftex.def Info: images/sdlc.png used on input line 804.
 (pdftex.def)             Requested size: 361.34999pt x 194.80139pt.
 
-[31 <./images/sdlc.png>] [32]
+[33 <./images/sdlc.png>] [34]
 Chapter 5.
-[33
+[35
 
-] <images/gantt.png, id=644, 815.29594pt x 464.4853pt>
-File: images/gantt.png Graphic file (type png)
+] <images/Capture.JPG, id=687, 633.11531pt x 380.17032pt>
+File: images/Capture.JPG Graphic file (type jpg)
 
-<use images/gantt.png>
-Package pdftex.def Info: images/gantt.png used on input line 826.
-(pdftex.def)             Requested size: 361.34999pt x 205.86253pt.
- [34 <./images/gantt.png>]
+<use images/Capture.JPG>
+Package pdftex.def Info: images/Capture.JPG used on input line 868.
+(pdftex.def)             Requested size: 289.07999pt x 173.58685pt.
+ [36 <./images/Capture.JPG>]
+<images/Screenshot1.png, id=695, 1371.1225pt x 770.88pt>
+File: images/Screenshot1.png Graphic file (type png)
+
+<use images/Screenshot1.png>
+Package pdftex.def Info: images/Screenshot1.png used on input line 878.
+(pdftex.def)             Requested size: 289.07999pt x 162.52477pt.
+
+<images/Screenshot2.png, id=696, 1371.1225pt x 770.88pt>
+File: images/Screenshot2.png Graphic file (type png)
+
+<use images/Screenshot2.png>
+Package pdftex.def Info: images/Screenshot2.png used on input line 886.
+(pdftex.def)             Requested size: 289.07999pt x 162.52477pt.
+
+<images/Screenshot3.png, id=697, 1371.1225pt x 770.88pt>
+File: images/Screenshot3.png Graphic file (type png)
+
+<use images/Screenshot3.png>
+Package pdftex.def Info: images/Screenshot3.png used on input line 894.
+(pdftex.def)             Requested size: 289.07999pt x 162.52477pt.
+
+<images/Screenshot4.png, id=698, 1371.1225pt x 770.88pt>
+File: images/Screenshot4.png Graphic file (type png)
+
+<use images/Screenshot4.png>
+Package pdftex.def Info: images/Screenshot4.png used on input line 902.
+(pdftex.def)             Requested size: 289.07999pt x 162.52477pt.
+ [37 <./images/Screenshot1.png> <./images/Screenshot2.png>] <images/Screenshot5
+.png, id=705, 1371.1225pt x 770.88pt>
+File: images/Screenshot5.png Graphic file (type png)
+
+<use images/Screenshot5.png>
+Package pdftex.def Info: images/Screenshot5.png used on input line 910.
+(pdftex.def)             Requested size: 289.07999pt x 162.52477pt.
+ [38 <./images/Screenshot3.png> <./images/Screenshot4.png> <./images/Screenshot
+5.png>]
 Chapter 6.
 
-Overfull \hbox (22.35947pt too wide) in paragraph at lines 834--834
+Overfull \hbox (22.35947pt too wide) in paragraph at lines 925--925
 \OT1/ptm/b/n/16 CONCLUSION AND SCOPE FOR FU-TURE EN-HANCE-MENT 
  []
 
-("major project proposal.bbl" [35
+("major project proposal.bbl" [39
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 856.
- [36
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 948.
+ [40
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 856.
- ("major project proposal.aux"
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 948.
+ ("major project proposal.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 948.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 948.
 
-LaTeX Warning: Acronyms may have changed. Please rerun LaTeX.
 
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 856.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 856.
-Package rerunfilecheck Info: File `"major project proposal".out' has not change
-d.
-(rerunfilecheck)             Checksum: 85A88B9F7D19CDB0332036EBAC029266;4623.
+Package rerunfilecheck Warning: File `"major project proposal".out' has changed
+.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
+Package rerunfilecheck Info: Checksums for `"major project proposal".out':
+(rerunfilecheck)             Before: C17D7EE6269794826ADC25F1DF90615A;4806
+(rerunfilecheck)             After:  2DDA68C238E09D04F15D83BAD038AE77;4806.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 856.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 948.
  ) 
 Here is how much of TeX's memory you used:
- 20427 strings out of 493333
- 396737 string characters out of 3130144
- 452342 words of memory out of 3000000
- 23580 multiletter control sequences out of 15000+200000
- 551092 words of font info for 61 fonts, out of 3000000 for 9000
+ 20485 strings out of 493333
+ 397742 string characters out of 3130144
+ 451994 words of memory out of 3000000
+ 23611 multiletter control sequences out of 15000+200000
+ 552106 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,40p,10550b,583s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,40p,10550b,583s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/amitd/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/amitd/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmex10.pfb><C:/Users/amitd/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
@@ -1359,9 +1404,9 @@ sy8.pfb><C:/Users/amitd/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times
 imes/utmbi8a.pfb><C:/Users/amitd/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 urw/times/utmr8a.pfb><C:/Users/amitd/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on "major project proposal.pdf" (44 pages, 818722 bytes).
+Output written on "major project proposal.pdf" (49 pages, 1322997 bytes).
 PDF statistics:
- 743 PDF objects out of 1000 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
- 623 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 809 PDF objects out of 1000 (max. 8388607)
+ 209 named destinations out of 1000 (max. 500000)
+ 672 words of extra memory for PDF output out of 10000 (max. 10000000)
 

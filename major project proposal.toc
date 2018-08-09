@@ -1,6 +1,7 @@
 \contentsline {chapter}{Abstract}{i}{chapter*.2}
-\contentsline {chapter}{List of Figures}{v}{chapter*.3}
-\contentsline {chapter}{List of Abbreviations}{vi}{chapter*.5}
+\contentsline {chapter}{Acknowledgment}{ii}{chapter*.3}
+\contentsline {chapter}{List of Figures}{vi}{chapter*.4}
+\contentsline {chapter}{List of Abbreviations}{vii}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Insurance}{2}{section.1.2}
@@ -34,36 +35,38 @@
 \contentsline {subsection}{\numberline {3.5.1}Measure of data Quality}{15}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Major Task in Data Pre-processing}{16}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}Data Smoothing}{16}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}SOMTE Technique}{17}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}Confusion Matrix}{17}{section.3.6}
-\contentsline {chapter}{\numberline {4}Methodology}{20}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Data Collection}{20}{subsection.4.0.1}
-\contentsline {subsection}{\numberline {4.0.2}Data Collection in Company}{20}{subsection.4.0.2}
-\contentsline {subsection}{\numberline {4.0.3}Overview of data}{20}{subsection.4.0.3}
-\contentsline {subsection}{\numberline {4.0.4}Data Pre-processing}{21}{subsection.4.0.4}
-\contentsline {subsection}{\numberline {4.0.5}Data Smoothing}{21}{subsection.4.0.5}
+\contentsline {subsection}{\numberline {3.5.4}Laplace Smoothing}{17}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}SMOTE Technique}{18}{subsection.3.5.5}
+\contentsline {section}{\numberline {3.6}Confusion Matrix}{18}{section.3.6}
+\contentsline {chapter}{\numberline {4}Methodology}{21}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.1}Data Collection}{21}{subsection.4.0.1}
+\contentsline {subsection}{\numberline {4.0.2}Data Collection in Company}{21}{subsection.4.0.2}
+\contentsline {subsection}{\numberline {4.0.3}Overview of data}{21}{subsection.4.0.3}
+\contentsline {subsection}{\numberline {4.0.4}Data Pre-processing}{22}{subsection.4.0.4}
+\contentsline {subsection}{\numberline {4.0.5}Data Smoothing}{22}{subsection.4.0.5}
 \contentsline {subsection}{\numberline {4.0.6}Model by Na\"{\i }ve Bayesian Classifier}{22}{subsection.4.0.6}
-\contentsline {subsection}{\numberline {4.0.7}Training model}{22}{subsection.4.0.7}
-\contentsline {subsection}{\numberline {4.0.8}Testing model}{22}{subsection.4.0.8}
-\contentsline {subsection}{\numberline {4.0.9}Final System Result}{22}{subsection.4.0.9}
-\contentsline {subsection}{\numberline {4.0.10}Reporting}{22}{subsection.4.0.10}
-\contentsline {subsection}{\numberline {4.0.11}Visualization}{22}{subsection.4.0.11}
-\contentsline {section}{\numberline {4.1}Algorithms and Flowchart}{22}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Algorithm}{22}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Flow Chart}{24}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Diagrams}{25}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}E-R Diagram}{25}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Use-Case}{26}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Class Diagram}{27}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Sequence Diagram}{28}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Collaboration Diagram}{30}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Software Development Process}{31}{section.4.3}
-\contentsline {chapter}{\numberline {5}Result and Discussion}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Outputs}{33}{section.5.1}
-\contentsline {section}{\numberline {5.2}Limitation}{33}{section.5.2}
-\contentsline {section}{\numberline {5.3}Problems Faced}{34}{section.5.3}
-\contentsline {section}{\numberline {5.4}Work Schedule}{34}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusion and Scope for Future Enhancement}{35}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusion}{35}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Enhancement}{35}{section.6.2}
-\contentsline {chapter}{References}{35}{Item.54}
+\contentsline {subsection}{\numberline {4.0.7}Training model}{23}{subsection.4.0.7}
+\contentsline {subsection}{\numberline {4.0.8}Testing model}{23}{subsection.4.0.8}
+\contentsline {subsection}{\numberline {4.0.9}Final System Result}{24}{subsection.4.0.9}
+\contentsline {subsection}{\numberline {4.0.10}Reporting}{24}{subsection.4.0.10}
+\contentsline {subsection}{\numberline {4.0.11}Visualization}{24}{subsection.4.0.11}
+\contentsline {section}{\numberline {4.1}Algorithms and Flowchart}{24}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Algorithm}{24}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Flow Chart}{26}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Diagrams}{27}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}E-R Diagram}{27}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Use-Case}{28}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Class Diagram}{29}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Sequence Diagram}{30}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Collaboration Diagram}{32}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Software Development Process}{33}{section.4.3}
+\contentsline {chapter}{\numberline {5}Result and Discussion}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Outputs}{35}{section.5.1}
+\contentsline {section}{\numberline {5.2}Problems Faced}{36}{section.5.2}
+\contentsline {section}{\numberline {5.3}Limitation}{36}{section.5.3}
+\contentsline {section}{\numberline {5.4}Work Schedule}{36}{section.5.4}
+\contentsline {section}{\numberline {5.5}Screenshots}{37}{section.5.5}
+\contentsline {chapter}{\numberline {6}Conclusion and Scope for Future Enhancement}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusion}{39}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Enhancement}{39}{section.6.2}
+\contentsline {chapter}{References}{39}{Item.62}
