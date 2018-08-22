@@ -20,16 +20,18 @@
 \newcommand{\hod}{Er. Rabindra Khati} %specify Head ot the department
 \newcommand{\defYear}{2018} %Defense Year
 \newcommand{\defMonth}{August} %Defense Month- January, February, ...
-\newcommand{\defDay}{12} %specify Defense Day- 1, 2, ...
+\newcommand{\defDay}{16} %specify Defense Day- 1, 2, ...
 
 \newif
 \ifhassupervisor
 \hassupervisortrue % to display supervisor name use command- \hassupervisortrue
  
 \newcommand{\supervisor}{Ajay Mani Paudel} % Specify Name of Supervisor for Major Project
-\newcommand{\degSup}{Executive Director} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
-\newcommand{\external}{External's Name} %Specify Name of External for Major Project (Required for Black Book)
-\newcommand{\degExternal}{External's Designation\\Second Line of Designation (if required)} %Specify Name of External for Major Project (Required for Black Book) , use multiple lines (\\) if necessary
+\newcommand{\degSup}{Founder and CEO}
+\newcommand{\orgSUP}{Quantasoft Technology \& Research Centre} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
+\newcommand{\external}{Dr. Dibakar Raj Pant } %Specify Name of External for Major Project (Required for Black Book)
+\newcommand{\degExternal}{Assistant Professor}
+\newcommand{\orgExt}{Pulchowk Campus, IOE} %Specify Name of External for Major Project (Required for Black Book) , use multiple lines (\\) if necessary
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,10 +114,10 @@
 \pagenumbering{roman} % starts pagenumberins in Roman numerals i, ii, ...
 
 %Copyright Page is required for FINAL REPORT only. Comment this section for other Reports.
-%\KECcopyright % defined in KECReportFormat.tex
+\KECcopyright % defined in KECReportFormat.tex
 
 %Approval Page is required for FINAL(Black Book Binded) REPORT of MAJOR PROJECT only. Comment this section for other Reports. 
-%\KECapproval % defined in KECReportFormat.tex
+\KECapproval % defined in KECReportFormat.tex
 
 \chapter*{Abstract} % The summary of your report
 \addcontentsline{toc}{chapter}{Abstract}%to include this chapter in TOC 
@@ -132,7 +134,7 @@ We cannot remain thanking, \textbf{Er. Ajay Mani Poudel} for sharing knowledge r
 \par
 We would also like to thank our teachers \textbf{Er. Rabindra Khati, Er. Ravi Chandra Koirala, Er. Dipesh Shrestha, Er. Tirtha Acharya, Er. Tek Nath Adhikari, Er. Ankit Shekhar Acharya, Er. Bishal Thapa, Er. Srijal Joshi} for their valuable suggestions and wishes towards the further development of the project. 
 \par 
-Our thanks and appreciation to our fellow classmate \textbf{Mr. Amit Shrestha} for helping us during the difficult phase of our project development.
+Our thanks and appreciation to our fellow classmate specially \textbf{Mr. Amit Shrestha} for helping us during the difficult phase of our project development.
 
 \par
 We would like to express our gratitude to the authors of various papers that helped us gain the in-depth knowledge of various aspects. Finally, we would like to thank all the people who are directly or indirectly related for the successful completion of this project.
@@ -204,7 +206,7 @@ Non-life insurance, also called property and casualty insurance, is a type of co
 \item Considerations in Setting Premium Rates
 \end{enumerate}
 
-\newpage
+
 \subsection{Insurance Risk}
 \begin{itemize}
 	\item Some examples of insurance risk:
@@ -216,6 +218,9 @@ Non-life insurance, also called property and casualty insurance, is a type of co
         \item Reputation - negative press
 	\end{enumerate}
 \end{itemize}
+
+
+\newpage
 A schematic overview over the different quantitative risk factors for non-life insurance can be given as:
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
@@ -262,7 +267,7 @@ The programmer can use automation tools called Experts to be guided through comm
 \section{Problem Statement}
 The insurance industry worldwide is facing the challenges of deregulation, consolidation and convergence of financial services. There is today a pressing demand for cutting edge services of insurance business management and enriched customer experiences at a significantly lower cost. Our project aims to predict the risk behind bike insurance. It relates the information of the current customer and bike to the past data determining whether to make insurance or not.
 
-\newpage
+
 \section{Objectives}\label{sec:obj}
 The objectives of this project are:
 \begin{itemize}
@@ -383,7 +388,7 @@ Qlik Sense is platform of data analysis. It analyze data and make discovery on y
 
 
 
-\chapter{Theory}
+\chapter{Some Related Theory and Formula}
 \section{Bayes' Theorem}
 \par
 Bayes’ Theorem is a statement from probability theory that allows for the calculation of  certain conditional  probabilities. Conditional  probabilities  are  those  probabilities  that reflect  the influence  of  one  event  on  the  probability  of  another  event. The  term  generally used in Bayes’ theorem are prior probability and posterior probability. The prior probability of a hypothesis or events the original probability obtained before any additional information is obtained. The posterior probability is the revised probability of the hypothesis using some additional information or evidence obtained.\cite{garg2013design}
@@ -425,7 +430,7 @@ Bayesian Network provides a powerful graphical method for encoding the probabili
 \[CLL (G|D)=\sum_{i=1}^{N}\log P(C_i|V_i) \]
 \newpage
 \par
-\subsection{Learning Models}
+\section{Learning Models}
 \par 
 Types of Learning models:
 \begin{enumerate}
@@ -442,6 +447,9 @@ Discriminative models (e.g.\acs{nn} and \acs{svm}) only learn from data to make 
 
 \par
 A Na\"{\i}ve Bayes Classifier is a probabilistic classifier based on applying Bayes’ theorem with strong independence  assumptions. When represented as a Bayesian network, a Na\"{\i}ve Bayes classifier has the structure depicted in Figure below.  \cite{friedman1997bayesian} It shows the independence assumption among all features in a data instance.
+\par
+Na\"{\i}ve Bayes Classifier is simple probabilistic classifier that calculates a set of probability by counting the frequency and combinations of value in a given set of data. The algorithm uses Bayes theorem and assumes all attributes to be independent given the value  of  the  class  variable. Na\"{\i}ve Bayesian classifier is based on Bayes’ theorem and the theorem of total probability. 
+\newpage
 \begin{figure}[bh] % tbh means top, bottom or here (priority: left to right)
 \begin{small}
 
@@ -452,8 +460,7 @@ A Na\"{\i}ve Bayes Classifier is a probabilistic classifier based on applying Ba
 \end{small}
 \end{figure}
 
-\par
-Na\"{\i}ve Bayes Classifier is simple probabilistic classifier that calculates a set of probability by counting the frequency and combinations of value in a given set of data. The algorithm uses Bayes theorem and assumes all attributes to be independent given the value  of  the  class  variable. Na\"{\i}ve Bayesian classifier is based on Bayes’ theorem and the theorem of total probability. 
+
 
 
 \section{Data Pre-Processing}\label{sec:obj}
@@ -480,7 +487,7 @@ Na\"{\i}ve Bayes Classifier is simple probabilistic classifier that calculates a
 \end{itemize}     
     
     
-    
+\newpage
 \subsection{Measure of data Quality}
     \begin{itemize}
     \item[•] \textbf{Well-accepted multidimensional view:}
@@ -493,7 +500,8 @@ Na\"{\i}ve Bayes Classifier is simple probabilistic classifier that calculates a
     \item[-] Accessibility
     \end{itemize}     
     \end{itemize}
-
+    
+    
 \subsection{Major Task in Data Pre-processing}    
 \begin{enumerate}
 \item Data Cleaning
@@ -577,6 +585,7 @@ A confusion matrix is a table that is often used to describe the performance of 
 \par 
 Confusion matrix is 2x2 matrix with 4 variables with Actual true and false and Predicated true and false class .
 
+
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{large}
 	\includegraphics[width=6in]{images/confusionmatrix.png}
@@ -588,6 +597,7 @@ Confusion matrix is 2x2 matrix with 4 variables with Actual true and false and P
 \end{large}
 \end{figure} 
 \par
+\newpage
 Terminology and derivatives from confusion matrix.
 \begin{enumerate}
 \item \textbf{Accuracy (ACC):}
@@ -595,27 +605,27 @@ Terminology and derivatives from confusion matrix.
 
 \item \textbf{Error (ERR):}
 \par $$ERR = \frac{FP+FN}{P+N} =\frac{FP+FN}{Total}$$
+%
 
-
-\item \textbf{Sensitivity or True Positive Rate (TPR):}
-\par $$TPR = \frac{TP}{P}=\frac{TP}{TP+TN}$$
-
-\item \textbf{False Positive Rate (FPR):}
-\par $$fPR = \frac{FP}{N}=\frac{FP}{FP+TN}$$
-\item \textbf{Specificity or True Negative Rate(TNR):}
-\par $$TNR = \frac{TN}{N}=\frac{TN}{FP+TN•}$$
-
-\item \textbf{Positive Predictive Value(PPV):}
-\par $$PPV = \frac{TP}{TP+FP}$$
+%\item \textbf{Sensitivity or True Positive Rate (TPR):}
+%\par $$TPR = \frac{TP}{P}=\frac{TP}{TP+TN}$$
+%
+%\item \textbf{False Positive Rate (FPR):}
+%\par $$fPR = \frac{FP}{N}=\frac{FP}{FP+TN}$$
+%\item \textbf{Specificity or True Negative Rate(TNR):}
+%\par $$TNR = \frac{TN}{N}=\frac{TN}{FP+TN•}$$
+%
+%\item \textbf{Positive Predictive Value(PPV):}
+%\par $$PPV = \frac{TP}{TP+FP}$$
  
-\item \textbf{Negative Positive Value(NPV):}
-\par $$NPV = \frac{TN}{TN+FN}$$ 
-
-\item \textbf{Negative Predictive Value(NPV):}
-\par $$ACC = \frac{TP+TN}{P+N}$$
-
-\item \textbf{F1 Score:}
-\par $$F1=\frac{2TP}{P+P'} $$
+%\item \textbf{Negative Positive Value(NPV):}
+%\par $$NPV = \frac{TN}{TN+FN}$$ 
+%
+%\item \textbf{Negative Predictive Value(NPV):}
+%\par $$ACC = \frac{TP+TN}{P+N}$$
+%
+%\item \textbf{F1 Score:}
+%\par $$F1=\frac{2TP}{P+P'} $$
 
 
 \end{enumerate}
@@ -624,7 +634,7 @@ Terminology and derivatives from confusion matrix.
 
 
 \chapter{Methodology}
-
+\section{Project Flow}
 \subsection{Data Collection}
 As our project is business intelligence on bike insurance, we needed the real data to explore the reality on the bike insurance. We have collected data from Nepal Insurance Company Limited,Kamaladi , Kathmandu.\cite{data2017} We have information about 1.6 Lakhs record from company.
 \subsection{Data Collection in Company}
@@ -671,7 +681,7 @@ Our system is able to produce report based on selected attributes.It will depict
 Our system is able to produce visualization bar chart based on the selected type of the attribute.It will depict the claim count,unclaimed count and total count of attribute of mentioned type.We have used javascript to make the bar chart more interactive and understandable.
 
 
-
+\newpage
 \section{Algorithms and Flowchart}
 \subsection{Algorithm}
 \begin{itemize}
@@ -708,7 +718,7 @@ $P(C_j)*P(A_i|C_j)$ is maximum.
 \subsection{Flow Chart}
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
-	\includegraphics[height=7in]{images/systemflow.png}
+	\includegraphics[height=6in]{images/systemflow.png}
 	\caption{Flow Chart Of Project} %figure name
 	
 	\label{Flow Chart} % for referencing
@@ -819,7 +829,7 @@ We mainly divide our project into 3 phase.
 	 \item[2.] \textbf{2nd Incremental Phase}
 	 \par 
 	 We started with implementing of algorithm and training and testing of data was done to find accuracy of data from collected data. We also get more data from company for further analysis of program. At this, point we were able make the system 60\% accurate. The accuracy remain low due to large variation in claimed and unclaimed data.
-	 \newpage
+	
 	 \item[3.] \textbf{3rd Incremental Phase}
 	 \par 
 	 We completed all the system designing part. We tested our program with 82\% accuracy and crystal report. We were able to increase the accuracy by almost 20 \% by using the Data smoothing techniques.
@@ -847,10 +857,9 @@ Using confusion matrix we have obtained 82\% accuracy. Using the same pre-proces
 \newpage
 \section{Problems Faced}
 \begin{itemize}
-\item Data filtering through various process. 
-\item Limited no of claimed data.
-\item Implementing the Algorithm.
-\item Generating report.
+\item Unbalanced data in the training set
+\item Original obtained data in Nepali format
+
 \end{itemize}
 
 \section{Limitation}
@@ -922,7 +931,7 @@ Using Na\"{\i}ve Bayesian Classifier, we created the model based upon the data o
 
 
 
-\chapter{Conclusion and Scope for Future Enhancement}
+\chapter{Conclusion and Future Enhancement}
 \section{Conclusion}
 \par
 This \textbf{"Project-X: Business Intelligence for Bike Insurance"} is business intelligence system as suggest by name.\acl{bi}(\acs{bi}) comprises the strategies and technologies used by enterprises for the data analysis of business information. It use for analysis of data to get a result for business strategy.
@@ -930,13 +939,13 @@ This \textbf{"Project-X: Business Intelligence for Bike Insurance"} is business 
 \par 
 Hence, this intelligence system would be great to the currently growing world with full of data with generating GB of data every hours. Project-X is just small step in  business intelligence world. We were able to predict whether the enter data of bike had insurance risk or not. It was a great experience doing this Project as all member have collaborated with each other to make this possible and specially thank to \textbf{Mr.Ajay Mani Paudel} for guidance as supervisor.
 
-
+ \newpage
 \section{Future Enhancement}
 \begin{enumerate}
 \item Increase domain to accommodate  all automobiles 
 \item Collects data from many insurance company as far as possible
 \item Connecting the system with the company server and update data simultaneously
-\item Prediction on  the persona basis
+\item Prediction on  the personal basis
 \end{enumerate}
 
 \renewcommand\bibname{References} % Change heading to References
