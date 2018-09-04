@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.5.1)  22 AUG 2018 07:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2018.5.1)  4 SEP 2018 17:44
 entering extended mode
 **./KECReportFormat.tex
 (KECReportFormat.tex
@@ -883,10 +883,10 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 
  
 Here is how much of TeX's memory you used:
- 18503 strings out of 493333
- 351579 string characters out of 3130144
- 427737 words of memory out of 3000000
- 21945 multiletter control sequences out of 15000+200000
+ 18505 strings out of 493333
+ 351591 string characters out of 3130144
+ 427806 words of memory out of 3000000
+ 21947 multiletter control sequences out of 15000+200000
  530570 words of font info for 23 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,0n,38p,10437b,275s stack positions out of 5000i,500n,10000p,200000b,50000s
